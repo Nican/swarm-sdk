@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="VPC Scripts">
+      <UniqueIdentifier>{39722e95-9b77-4b14-92fd-c06df7bf07a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c81b2369-9471-4d5b-9c8a-b889611f045c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TileSource">
+      <UniqueIdentifier>{8f11ffe1-9232-44b6-910c-77f622bb0cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\keyvalues_editor">
+      <UniqueIdentifier>{98c031fd-e183-4202-8168-e325e82cf694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout_system">
+      <UniqueIdentifier>{5021c60f-4f37-4537-80a7-7511c9f7e271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout_system_editor">
+      <UniqueIdentifier>{f7119be7-0ea3-4700-8cb0-36e202ec3f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vgui">
+      <UniqueIdentifier>{8f2e9345-1829-466e-b2b3-a144cc060c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vgui\Dialogs">
+      <UniqueIdentifier>{02689bdd-9713-43d5-b6df-1f6f91048c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Link Libraries">
+      <UniqueIdentifier>{d0bb5ce6-ad9c-45ab-aa43-fa5e1dfe0166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Header Files">
+      <UniqueIdentifier>{49cf5bba-e63f-490c-ade0-887f795e4a74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\vpc_scripts\loadaddress.vpc">
+      <Filter>VPC Scripts</Filter>
+    </None>
+    <None Include="missionchooser_swarm.vpc">
+      <Filter>VPC Scripts</Filter>
+    </None>
+    <None Include="..\..\vpc_scripts\source_dll_win32_base.vpc">
+      <Filter>VPC Scripts</Filter>
+    </None>
+    <None Include="..\..\vpc_scripts\source_dll_win32_debug.vpc">
+      <Filter>VPC Scripts</Filter>
+    </None>
+    <None Include="..\..\vpc_scripts\source_dll_win32_release.vpc">
+      <Filter>VPC Scripts</Filter>
+    </None>
+    <None Include="..\..\vpc_scripts\version.vpc">
+      <Filter>VPC Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asw_key_values_database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_location_grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_map_builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_mission_chooser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_mission_chooser_source_local.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_mission_text_database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_npcs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_random_missions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_spawn_selection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asw_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\chunkfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\debug_dll_check.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\tier0\memoverride.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tile_check.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VMFExporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSource\LevelTheme.cpp">
+      <Filter>Source Files\TileSource</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSource\MapLayout.cpp">
+      <Filter>Source Files\TileSource</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSource\Room.cpp">
+      <Filter>Source Files\TileSource</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSource\RoomTemplate.cpp">
+      <Filter>Source Files\TileSource</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSource\TagList.cpp">
+      <Filter>Source Files\TileSource</Filter>
+    </ClCompile>
+    <ClCompile Include="keyvalues_editor\kv_combo_leaf_panel.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="keyvalues_editor\kv_editor.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="keyvalues_editor\kv_editor_base_panel.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="keyvalues_editor\kv_editor_frame.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="keyvalues_editor\kv_fit_children_panel.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="keyvalues_editor\kv_leaf_panel.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="keyvalues_editor\kv_node_panel.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\location_editor\location_editor_frame.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\location_editor\location_layout_panel.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\location_editor\mission_txt_leaf_panel.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\mission_editor\theme_room_picker.cpp">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_actions.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_class_factories.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_enum.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_expressions.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_layout_system.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_listeners.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_mission_preprocessor.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_ranges.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system\tilegen_rule.cpp">
+      <Filter>Source Files\layout_system</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system_editor\layout_system_kv_editor.cpp">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system_editor\mission_panel.cpp">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system_editor\node_panel.cpp">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system_editor\rule_instance_node_panel.cpp">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system_editor\rule_instance_parameter_panel.cpp">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_system_editor\state_node_panel.cpp">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\MapLayoutPanel.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\missionchooser_tgaimagepanel.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\npc_spawns_panel.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\PlacedRoomTemplatePanel.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\RoomTemplateListPanel.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\RoomTemplatePanel.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\ScrollingWindow.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\tilegen_pages.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\ToggleExitsPanel.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\vgui_controls\vgui_controls.cpp">
+      <Filter>Source Files\vgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\dialogs\ExitEditDialog.cpp">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\dialogs\RoomTemplateEditDialog.cpp">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\dialogs\ThemeEditDialog.cpp">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\dialogs\ThemesDialog.cpp">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui\dialogs\TileGenDialog.cpp">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="asw_key_values_database.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_location_grid.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_map_builder.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_mission_chooser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_mission_chooser_source_local.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_mission_text_database.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_npcs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_random_missions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_spawn_selection.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asw_system.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tile_check.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tilegen_core.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VMFExporter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSource\LevelTheme.h">
+      <Filter>Source Files\TileSource</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSource\MapLayout.h">
+      <Filter>Source Files\TileSource</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSource\Room.h">
+      <Filter>Source Files\TileSource</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSource\RoomTemplate.h">
+      <Filter>Source Files\TileSource</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSource\TagList.h">
+      <Filter>Source Files\TileSource</Filter>
+    </ClInclude>
+    <ClInclude Include="keyvalues_editor\kv_combo_leaf_panel.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="keyvalues_editor\kv_editor.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="keyvalues_editor\kv_editor_base_panel.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="keyvalues_editor\kv_editor_frame.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="keyvalues_editor\kv_fit_children_panel.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="keyvalues_editor\kv_leaf_panel.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="keyvalues_editor\kv_node_panel.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\location_editor\location_editor_frame.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\location_editor\location_layout_panel.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\location_editor\mission_txt_leaf_panel.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\mission_editor\theme_room_picker.h">
+      <Filter>Source Files\keyvalues_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_actions.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_class_factories.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_class_interfaces.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_enum.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_expressions.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_layout_system.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_listeners.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_mission_preprocessor.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_ranges.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system\tilegen_rule.h">
+      <Filter>Source Files\layout_system</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system_editor\layout_system_kv_editor.h">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system_editor\mission_panel.h">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system_editor\node_panel.h">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system_editor\rule_instance_node_panel.h">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system_editor\rule_instance_parameter_panel.h">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="layout_system_editor\state_node_panel.h">
+      <Filter>Source Files\layout_system_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\MapLayoutPanel.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\missionchooser_tgaimagepanel.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\npc_spawns_panel.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\PlacedRoomTemplatePanel.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\RoomTemplateListPanel.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\RoomTemplatePanel.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\ScrollingWindow.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\tilegen_pages.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\ToggleExitsPanel.h">
+      <Filter>Source Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\dialogs\ExitEditDialog.h">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\dialogs\RoomTemplateEditDialog.h">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\dialogs\ThemeEditDialog.h">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\dialogs\ThemesDialog.h">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui\dialogs\TileGenDialog.h">
+      <Filter>Source Files\vgui\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="chunkfile.h">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\missionchooser\iasw_mission_chooser.h">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\missionchooser\iasw_mission_chooser_source.h">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\missionchooser\iasw_random_missions.h">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\missionchooser\iasw_spawn_selection.h">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\tier1\interface.h">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\lib\public\bitmap.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\dmxloader.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\fgdlib.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\interfaces.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\common\jpeglib.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\mathlib.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\matsys_controls.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\steam_api.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\tier0.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\tier1.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\tier2.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\tier3.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\vbsp2lib.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\vgui_controls.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\vstdlib.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+    <Library Include="..\..\lib\public\vtf.lib">
+      <Filter>Link Libraries</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
