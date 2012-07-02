@@ -38,7 +38,7 @@ CCreateMultiplayerGameDialog::CCreateMultiplayerGameDialog(vgui::Panel *parent) 
 	SetTitle("#GameUI_CreateServer", true);
 	SetOKButtonText("#GameUI_Start");
 
-	if (!stricmp( ModInfo().GetGameName(), "Counter-Strike Source" ))
+	if (!stricmp( ModInfo().GetGameName(), "Swarm SDK Template" ))
 	{
 		m_bBotsEnabled = true;
 	}
