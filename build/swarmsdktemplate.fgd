@@ -1,0 +1,55 @@
+//-------------------------------------------------------------------------
+//
+// Swarms SDK Template FGD
+//
+//-------------------------------------------------------------------------
+
+@include "base.fgd"
+
+//-------------------------------------------------------------------------
+//
+// Point Classes
+//
+//-------------------------------------------------------------------------
+@PointClass base(Angles,Targetname,EnableDisable) studio("models/editor/playerstart.mdl") = info_player_deathmatch :
+	"This entity marks the start point for players in deathmatch."
+[
+]
+
+@PointClass base(Angles,Targetname,EnableDisable) studio("models/editor/playerstart.mdl") = info_player_blue :
+	"This entity marks the start point for allies. One of these needs to be placed for each team member. " +
+	"16 start points is typical. Should be placed at least 128 units away from each other and surrounding walls."
+[
+]
+
+
+@PointClass base(Angles,Targetname,EnableDisable) studio("models/editor/playerstart.mdl") = info_player_red :
+	"This entity marks the start point for axis. One of these needs to be placed for each team member. " +
+	"16 start points is typical. Should be placed at least 128 units away from each other and surrounding walls."
+[
+]
+
+@FilterClass base(BaseFilter) size(-8 -8 -8, 8 8 8) = filter_activator_team :
+	"A filter that filters by the team of the activator."
+[
+	filterteam(choices) : "Filter Team Number" : 2 : 
+		"The team number to filter by.  If the filter mode is Allow, only entities whose "+
+		"team number matches the given team will pass the filter. If the filter mode is Disallow, "+
+		"all entities EXCEPT those whose team number matches the given team will pass the filter." =
+	[
+		2 : "Allies"
+		3 : "Axis"
+	]
+]
+
+//-------------------------------------------------------------------------
+//
+// Solid Classes
+//
+//-------------------------------------------------------------------------
+@SolidClass = func_ladder : 
+	"Ladder. Players will be able to freely along this brush, as if it was a ladder. If you are using a model prop " +
+	"for the visual representation of the ladder in the map, apply the toolsinvisibleladder material to the " +
+	"func_ladder brush."
+[
+]

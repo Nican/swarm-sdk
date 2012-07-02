@@ -1,0 +1,7 @@
+DecalModulate
+{
+$basetexture "Decals/brick/brick3"
+$decal 1
+$decalscale 0.1
+$decalScaleVariation "0.25"
+}

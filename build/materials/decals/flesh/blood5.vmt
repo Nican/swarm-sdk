@@ -1,0 +1,7 @@
+DecalModulate
+{
+$basetexture "Decals/flesh/Blood5"
+$decal 1
+$decalscale 0.1
+$fogfadeend 0.5
+}

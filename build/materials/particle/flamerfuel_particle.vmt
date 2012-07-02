@@ -1,0 +1,10 @@
+SpriteCard
+{
+$basetexture "Decals\flamerfuel"
+
+$envmap "environment maps\citadel_interior"
+$translucent 1
+
+$vertexcolor 1
+$vertexalpha 1
+}

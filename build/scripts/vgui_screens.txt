@@ -1,0 +1,5 @@
+"VGUI_Screens"
+{
+	// This name here can be referenced from within a 
+	// vgui_screen entity to select this vgui panel
+}

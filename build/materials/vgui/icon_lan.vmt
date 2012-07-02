@@ -1,0 +1,7 @@
+UnlitGeneric
+{
+$basetexture "vgui\icon_lan"
+$translucent 1
+$ignorez 1
+$vertexalpha 1
+}

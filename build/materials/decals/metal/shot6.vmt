@@ -1,0 +1,6 @@
+DecalModulate
+{
+$basetexture "Decals/metal/shot6"
+$decalscale 0.10
+$decalDynamicScale 1
+}

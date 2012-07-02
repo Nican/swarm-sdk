@@ -1,0 +1,6 @@
+DecalModulate
+{
+$baseTexture "decals\asphalt\asphalt4"
+$decalscale "0.15"
+$decalScaleVariation "0.25"
+}

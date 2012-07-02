@@ -1,0 +1,9 @@
+Refract
+{
+$refractamount "0.01"
+$normalmap "effects/magnifyinglens_normal"
+$refracttint "[3 3 3]"
+$refracttinttexture "effects/magnifyinglens_tint"
+$magnifyEnable 1
+$magnifyScale "1.3"
+}

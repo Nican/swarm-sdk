@@ -1,0 +1,6 @@
+UnlitGeneric
+{
+$basetexture "vgui\swarm\loading\BGFX04_wide"
+$surfaceprop metal
+$vertexcolor 1 $vertexalpha 1 $no_fullbright 1 $ignorez 1
+}

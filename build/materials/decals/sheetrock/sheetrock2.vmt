@@ -1,0 +1,7 @@
+DecalModulate
+{
+$baseTexture "decals/sheetrock/sheetrock2"
+$decal 1
+$decalscale "0.1"
+$decalScaleVariation "0.15"
+}

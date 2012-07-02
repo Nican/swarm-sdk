@@ -1,0 +1,6 @@
+UnlitGeneric
+{
+$basetexture "vgui\icon_speaker_muted"
+$translucent 1
+$ignorez 1
+}

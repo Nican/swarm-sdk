@@ -1,0 +1,131 @@
+"npc_citizen.die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"player/death1.wav"
+		"wave"	"player/death2.wav"
+		"wave"	"player/death3.wav"
+		"wave"	"player/death4.wav"
+		"wave"	"player/death5.wav"
+		"wave"	"player/death6.wav"
+	}
+}
+
+"NPC_CombineS.ElectrocuteScream"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_90DB"
+
+	"rndwave"
+	{
+		"wave"	"npc/combine_soldier/die1.wav"
+		"wave"	"npc/combine_soldier/die2.wav"
+		"wave"	"npc/combine_soldier/die3.wav"
+	}
+}
+
+"HL2Player.SprintNoPower"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_60dB"
+
+	"wave"	"player/suit_denydevice.wav"
+}
+
+"HL2Player.SprintStart"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"soundlevel"  "SNDLVL_60dB"
+
+	"wave"	"player/suit_sprint.wav"
+}
+
+"HL2Player.FlashLightOn"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"0.8"
+	"soundlevel"    "SNDLVL_75dB"
+	"pitch"	"PITCH_NORM"
+
+	"wave" "items/flashlight1.wav"
+}
+
+"HL2Player.FlashLightOff"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"	"PITCH_NORM"
+
+	"wave" "items/flashlight1.wav"
+}
+
+"HL2Player.PickupWeapon"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/ammo_pickup.wav"
+}
+
+"HL2Player.TrainUse"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"plats/train_use1.wav"
+}
+
+"HL2Player.Use"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.4"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"common/wpn_select.wav"
+}
+
+"HL2Player.UseNPC"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.4"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"common/wpn_select.wav"
+}
+
+"HL2Player.UseDeny"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.4"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"common/wpn_denyselect.wav"
+}
+
+"HL2Player.BurnPain"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"rndwave"
+	{
+			"wave"	"player/pl_burnpain1.wav"
+			"wave"	"player/pl_burnpain2.wav"
+			"wave"	"player/pl_burnpain3.wav"
+	}
+}

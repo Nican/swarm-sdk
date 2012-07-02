@@ -1,0 +1,10 @@
+Subrect
+{
+$Material "decals/decals_mod2x"
+$Pos "0 384"
+$Size "32 32"
+$modelmaterial "decals\dirt\dirt1"
+$decal 1
+$decalscale "0.075"
+$decalScaleVariation "0.15"
+}

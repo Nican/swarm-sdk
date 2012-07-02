@@ -1,0 +1,7 @@
+UnlitGeneric
+{
+$basetexture "vgui\swarm\MissionPics\UnknownMissionPic"
+$vertexcolor 1
+$vertexalpha 1
+$ignorez 1
+}

@@ -1,0 +1,26 @@
+"GameInfo"
+{
+	"game"		"Swarm SDK Template"
+	"title"		""
+	"type"		"multiplayer_only"
+	"icon"		"resource/game"
+	"developer"		"Swarm SDK Template"
+	"developer_url" 	"https://code.google.com/p/swarm-sdk-template/"
+	GameData		"swarmsdktemplate.fgd"
+	InstancePath 	"tilegen/instances/"
+	
+	SupportsDX8     	0
+	
+	"FileSystem"
+	{
+		"SteamAppId"	"630"
+		"ToolsAppId"	"211"
+		
+		"SearchPaths"
+		{
+			"Game"	"|gameinfo_path|."
+			"Game"	"swarm_base"
+			"Game"	"platform"
+		}
+	}
+}

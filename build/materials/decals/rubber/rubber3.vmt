@@ -1,0 +1,7 @@
+DecalModulate
+{
+$baseTexture "decals\rubber\rubber3"
+$decal 1
+$decalscale "0.05"
+$decalScaleVariation "0.1"
+}

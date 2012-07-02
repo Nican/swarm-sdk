@@ -1,0 +1,6 @@
+UnlitGeneric
+{
+$basetexture "vgui\resource\cloud_bg_image"
+$ignorez 1
+$translucent 1
+}

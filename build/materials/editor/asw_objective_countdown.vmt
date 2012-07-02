@@ -1,0 +1,7 @@
+Sprite
+{
+$basetexture "Editor\asw_objective_countdown"
+$spriteorientation vp_parallel
+$spriteorigin "[ 0.50 0.50 ]"
+$no_fullbright 1
+}

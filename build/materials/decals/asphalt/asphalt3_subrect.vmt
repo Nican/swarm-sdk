@@ -1,0 +1,10 @@
+Subrect
+{
+$Material "decals\Decals_bulletsheet"
+$Pos "192 32"
+$Size "32 32"
+$modelmaterial "decals\asphalt\asphalt3"
+$decal 1
+$decalscale "0.15"
+$decalScaleVariation "0.25"
+}

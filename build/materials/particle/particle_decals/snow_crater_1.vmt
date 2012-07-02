@@ -1,0 +1,10 @@
+DecalModulate
+{
+$basetexture "particle/particle_decals/snow_crater_1"
+$vertexcolor 1
+$vertexalpha 1
+
+
+
+
+}

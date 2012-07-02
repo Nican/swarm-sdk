@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+$baseTexture "decals\metal\metal01b"
+$translucent 1
+$decal 1
+$decalscale "0.1"
+$decalScaleVariation "0.15"
+}

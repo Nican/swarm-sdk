@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+$basetexture "Editor\asw_spawner"
+$translucent 1
+}

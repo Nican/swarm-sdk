@@ -1,0 +1,56 @@
+UnlitGeneric
+{
+$additive 1
+$basetexture "effects/security_noise2"
+$one 1
+$zero 0
+$temp 0
+$texoffset "[0 0]"
+$texscale 2
+$xo_b_halfwidth 0.5
+$xo_b_noise 0
+$xo_s_halfwidth 0.5
+$xo_s_noise 0
+$xo_t_halfwidth 0.5
+$xo_threshold 0
+Proxies
+{
+GaussianNoise
+{
+mean $zero
+halfwidth $xo_b_halfwidth
+resultVar $xo_b_noise
+}
+GaussianNoise
+{
+mean $zero
+halfwidth $xo_s_halfwidth
+resultVar $xo_s_noise
+}
+GaussianNoise
+{
+mean $xo_threshold
+halfwidth $xo_t_halfwidth
+resultVar $xo_threshold
+}
+Abs
+{
+srcVar1 $xo_b_noise
+resultVar $temp
+}
+LessOrEqual
+{
+srcVar1 $temp
+srcVar2 $xo_threshold
+lessEqualVar $xo_s_noise
+greaterVar $xo_b_noise
+resultVar "$texoffset[0]"
+}
+TextureTransform
+{
+translateVar $texoffset
+scaleVar $texscale
+resultVar $basetexturetransform
+}
+}
+}
