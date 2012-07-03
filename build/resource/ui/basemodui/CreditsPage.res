@@ -36,7 +36,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"SDK_UI_Game_Title"
-		"xpos"				"c-350"
+		"xpos"				"c100"
 		"ypos"				"115" 
 		"wide"				"200"
 		"tall"				"20"
@@ -54,7 +54,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Kosire"
-		"xpos"				"c-350"
+		"xpos"				"c100"
 		"ypos"				"140" 
 		"wide"				"100"
 		"tall"				"10"
@@ -72,7 +72,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Tony Sergi"
-		"xpos"				"c-350"
+		"xpos"				"c100"
 		"ypos"				"155" 
 		"wide"				"100"
 		"tall"				"10"
@@ -90,7 +90,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"c_b_fofep"
-		"xpos"				"c-350"
+		"xpos"				"c100"
 		"ypos"				"170" 
 		"wide"				"100"
 		"tall"				"10"
@@ -108,7 +108,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Doplhur"
-		"xpos"				"c-350"
+		"xpos"				"c0"
 		"ypos"				"185" 
 		"wide"				"100"
 		"tall"				"10"
@@ -126,7 +126,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Valve"
-		"xpos"				"c-350"
+		"xpos"				"c100"
 		"ypos"				"200" 
 		"wide"				"100"
 		"tall"				"10"
@@ -140,22 +140,31 @@
 		"font"				"DefaultMedium"
 	}
 	
-	"BtnDone" [$WIN32]
+	"BtnCancel" [$WIN32]
 	{
-		"ControlName"			"CNB_Button"
-		"fieldName"				"BtnDone"
-		"xpos"				"c-350"
-		"ypos"				"r32"
-		"wide"				"117"
-		"tall"				"27"
-		"zpos"				"1"
+		"ControlName"			"BaseModHybridButton"
+		"fieldName"				"BtnCancel"
+		"xpos"					"c-180"
+		"ypos"					"420"
+		"zpos"					"1"
+		"wide"					"250"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"0"
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"labelText"				"#L4D360UI_Done_Caps"
+		"wrap"					"1"
+		"labelText"				"#L4D360UI_Done"
+		"tooltiptext"			"#L4D360UI_Tooltip_Back"
+		"style"					"MainMenuSmallButton"
 		"command"				"Back"
-		"textAlignment"			"center"
-		"font"				"DefaultMedium"
-		"fgcolor_override"		"113 142 181 255"
+		"proportionalToParent"	"1"
+		"usetitlesafe" 			"0"
+		EnabledTextInsetX		"2"
+		DisabledTextInsetX		"2"
+		FocusTextInsetX			"2"
+		OpenTextInsetX			"2"
+		"allcaps"				"1"
 	}
 }

@@ -7,29 +7,14 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"f0"
-		"tall"			"480"	[$WIN32]
+		"tall"			"460"	[$WIN32]
 		"tall"			"380"	[$X360]
-		//"autoResize"	"0"
-		//"pinCorner"		"0"
+		"autoResize"	"0"
+		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		//"usetitlesafe"	"1"
-	}
-
-	"Title"
-	{
-		"fieldName"		"Title"
-		"xpos"		"c-266"
-		"ypos"		"56"
-		"wide"		"150"
-		"tall"		"19"
-		"zpos"		"5"
-		"font"		"DefaultExtraLarge"
-		"textAlignment"		"west"
-		"ControlName"		"Label"
-		"labelText"		"#L4D360UI_My_Achievements"
-		"fgcolor_override"		"224 224 224 255"
+		"usetitlesafe"	"1"
 	}
 	
 	"TotalProgressBG" 
@@ -220,20 +205,29 @@
 	}
 	"BtnCancel" [$WIN32]
 	{
-		"ControlName"			"CNB_Button"
+		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnCancel"
-		"xpos"		"c-264"
-		"ypos"		"r23"
-		"wide"		"117"
-		"tall"		"27"
-		"zpos"		"1"
+		"xpos"					"c-180"
+		"ypos"					"420"
+		"zpos"					"1"
+		"wide"					"250"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"0"
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"labelText"				"#nb_back"
+		"wrap"					"1"
+		"labelText"				"#L4D360UI_Done"
+		"tooltiptext"			"#L4D360UI_Tooltip_Back"
+		"style"					"MainMenuSmallButton"
 		"command"				"Back"
-		"textAlignment"		"center"
-		"font"		"DefaultMedium"
-		"fgcolor_override"		"113 142 181 255"
+		"proportionalToParent"	"1"
+		"usetitlesafe" 			"0"
+		EnabledTextInsetX		"2"
+		DisabledTextInsetX		"2"
+		FocusTextInsetX			"2"
+		OpenTextInsetX			"2"
+		"allcaps"				"1"
 	}
 }

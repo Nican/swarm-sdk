@@ -5,26 +5,15 @@
 		"ControlName"		"Frame"
 		"fieldName"			"Video"
 		"xpos"				"0"
-		"ypos"				"250"
+		"ypos"				"0"
 		"wide"				"f0"
-		"tall"				"f0"
+		"tall"				"408" [$OSX]
+		"tall"				"448" [!$OSX]
+		"autoResize"		"0"
+		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
-	}
-	
-	"Title"
-	{
-		"fieldName"		"Title"
-		"xpos"		"c-266"
-		"ypos"		"81"
-		"wide"		"150"
-		"tall"		"19"
-		"zpos"		"5"
-		"font"		"DefaultExtraLarge"
-		"textAlignment"		"west"
-		"ControlName"		"Label"
-		"labelText"		"#GameUI_Video"
-		"fgcolor_override"		"224 224 224 255"
+		"tabPosition"		"0"
 	}
 	
 	"ImgBackground"	[$WIN32]
@@ -35,10 +24,10 @@
 		"ypos"					"79"
 		"zpos"					"-1"
 		"wide"					"f0"
-		"tall"					"f0"
+		"tall"					"340"
 		"autoResize"			"0"
 		"pinCorner"				"0"
-		"visible"				"0"
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"fillColor"				"0 0 0 0"
