@@ -39,7 +39,7 @@ static ConVar cam_ideallag( "cam_ideallag", "4.0", FCVAR_ARCHIVE, "Amount of lag
 static ConVar cam_idealdelta( "cam_idealdelta", "4.0", FCVAR_ARCHIVE, "Controls the speed when matching offset to ideal angles in thirdperson view" );
 ConVar cam_idealyaw( "cam_idealyaw", "0", FCVAR_ARCHIVE );	 // thirdperson yaw
 ConVar cam_idealpitch( "cam_idealpitch", "0", FCVAR_ARCHIVE );	 // thirperson pitch
-ConVar cam_idealdist( "cam_idealdist", "150", FCVAR_ARCHIVE );	 // thirdperson distance
+ConVar cam_idealdist( "cam_idealdist", "100", FCVAR_ARCHIVE );	 // thirdperson distance
 static ConVar cam_collision( "cam_collision", "1", FCVAR_ARCHIVE, "When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls." );
 static ConVar cam_showangles( "cam_showangles", "0", FCVAR_CHEAT, "When in thirdperson, print viewangles/idealangles/cameraoffsets to the console." );
 static ConVar c_maxpitch( "c_maxpitch", "90", FCVAR_ARCHIVE );
