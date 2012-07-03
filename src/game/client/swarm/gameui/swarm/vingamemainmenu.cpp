@@ -26,6 +26,8 @@
 
 #include "gameui_util.h"
 
+#include "playerlistdialog.h"
+
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
@@ -86,7 +88,7 @@ static void LeaveGameOkCallback()
 	CBaseModPanel::GetSingleton().OpenFrontScreen();
 }
 
-//void ShowPlayerList();
+void ShowPlayerList();
 
 //=============================================================================
 void InGameMainMenu::OnCommand( const char *command )
@@ -254,6 +256,12 @@ void InGameMainMenu::OnCommand( const char *command )
 		m_ActiveControl->NavigateFrom( );
 		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARDMOUSE, this, true );
 	}
+	else if (!Q_strcmp(command, "Mouse"))
+	{
+		// standalone keyboard/mouse dialog, PC only
+		m_ActiveControl->NavigateFrom( );
+		CBaseModPanel::GetSingleton().OpenWindow(WT_MOUSE, this, true );
+	}
 	else if( Q_stricmp( "#L4D360UI_Controller_Edit_Keys_Buttons", command ) == 0 )
 	{
 		FlyoutMenu::CloseActiveMenu();
@@ -305,6 +313,22 @@ void InGameMainMenu::OnCommand( const char *command )
 	else if( !Q_strcmp( command, "Addons" ) )
 	{
 		CBaseModPanel::GetSingleton().OpenWindow( WT_ADDONS, this, true );
+	}
+	else if ( !Q_strcmp( command, "OpenServerBrowser" ) )
+	{
+		if ( CheckAndDisplayErrorIfNotLoggedIn() )
+			return;
+
+		// on PC, bring up the server browser and switch it to the LAN tab (tab #5)
+		engine->ClientCmd( "openserverbrowser" );
+	}
+	else if ( !Q_strcmp( command, "OpenMutePlayers" ) )
+	{
+		if ( CheckAndDisplayErrorIfNotLoggedIn() )
+			return;
+
+		// Bring up the mute players dialogue window
+		engine->ClientCmd( "openplayerlist" );
 	}
 	else
 	{
@@ -722,3 +746,16 @@ void InGameMainMenu::SetFooterState()
 		footer->SetButtonText( FB_BBUTTON, "#L4D360UI_Done" );
 	}
 }
+
+#ifndef _X360
+CON_COMMAND_F( openplayerlist, "Opens the player list dialogue", 0 )
+{
+	bool isSteam = IsPC() && steamapicontext->SteamFriends() && steamapicontext->SteamUtils();
+	if ( isSteam )
+	{
+		CBaseModFrame* mainMenu = CBaseModPanel::GetSingleton().GetWindow( WT_INGAMEMAINMENU );
+		CPlayerListDialog *window = new CPlayerListDialog( mainMenu );
+		window->Activate();
+	}
+}
+#endif

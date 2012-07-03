@@ -721,6 +721,7 @@ exit 1
     <ClCompile Include="sdk\vgui\sdk_teammenu.cpp" />
     <ClCompile Include="sdk\vgui\sdk_textwindow.cpp" />
     <ClCompile Include="sdk\vgui\vgui_rootpanel_sdk.cpp" />
+    <ClCompile Include="sdk\vmouse.cpp" />
     <ClCompile Include="simple_keys.cpp" />
     <ClCompile Include="..\..\public\simple_physics.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -1600,6 +1601,7 @@ exit 1
     <ClInclude Include="sdk\vgui\sdk_teammenu.h" />
     <ClInclude Include="sdk\vgui\sdk_textwindow.h" />
     <ClInclude Include="sdk\vgui\vgui_rootpanel_sdk.h" />
+    <ClInclude Include="sdk\vmouse.h" />
     <ClInclude Include="spatialentitymgr.h" />
     <ClInclude Include="swarm\c_asw_jukebox.h" />
     <ClInclude Include="swarm\vgui\asw_vgui_music_importer.h" />

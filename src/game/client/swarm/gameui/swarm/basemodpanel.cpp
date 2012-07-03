@@ -20,6 +20,7 @@
 #include "filesystem/IXboxInstaller.h"
 #include "tier2/renderutils.h"
 #include "vcreditspage.h"
+#include "vmouse.h"
 
 #ifdef _X360
 	#include "xbox/xbox_launch.h"
@@ -179,7 +180,7 @@ CBaseModPanel::CBaseModPanel(): BaseClass(0, "CBaseModPanel"),
 	// needed to allow engine to exec startup commands (background map signal is 1 frame behind) 
 	m_DelayActivation = 3;
 
-	m_UIScheme = vgui::scheme()->LoadSchemeFromFileEx( 0, "resource/SwarmSchemeNew.res", "SwarmScheme" );
+	m_UIScheme = vgui::scheme()->LoadSchemeFromFileEx( 0, "resource/SwarmScheme.res", "SwarmScheme" );
 	SetScheme( m_UIScheme );
 
 	// Only one user on the PC, so set it now
@@ -398,6 +399,16 @@ CBaseModFrame* CBaseModPanel::OpenWindow(const WINDOW_TYPE & wt, CBaseModFrame *
 			break;
 #else
 			m_Frames[wt] = new VKeyboard(this, "VKeyboard");
+#endif
+			break;
+
+		case WT_MOUSE:
+#if defined( _X360 )
+			// not for xbox
+			Assert( 0 );
+			break;
+#else
+			m_Frames[wt] = new KeyboardMouse(this, "KeyboardMouse");
 #endif
 			break;
 
@@ -2029,7 +2040,6 @@ void CBaseModPanel::PaintBackground()
 			surface()->DrawSetTexture( m_iBackgroundImageID );
 			surface()->DrawTexturedRect( 0, 0, wide, tall );
 
-#ifdef SWARMSDKTEMPLATE
 			if ( ASWBackgroundMovie() )
 			{
 				ASWBackgroundMovie()->Update();
@@ -2063,7 +2073,6 @@ void CBaseModPanel::PaintBackground()
 					}
 				}
 			}
-#endif
 		}
 	}
 

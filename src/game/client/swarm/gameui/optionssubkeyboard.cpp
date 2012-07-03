@@ -44,7 +44,7 @@ using namespace vgui;
 //-----------------------------------------------------------------------------
 COptionsSubKeyboard::COptionsSubKeyboard(vgui::Panel *parent) : EditablePanel(parent, "OptionsSubKeyboard" )
 {
-	vgui::HScheme scheme = vgui::scheme()->LoadSchemeFromFile("resource/SwarmFrameScheme.res", "SwarmFrameScheme");
+	vgui::HScheme scheme = vgui::scheme()->LoadSchemeFromFile("resource/SourceScheme.res", "SourceScheme");
 	SetScheme(scheme);
 
 	Q_memset( m_Bindings, 0, sizeof( m_Bindings ));

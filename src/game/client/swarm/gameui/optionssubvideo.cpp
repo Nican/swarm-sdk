@@ -1351,7 +1351,7 @@ COptionsSubVideoThirdPartyCreditsDlg::COptionsSubVideoThirdPartyCreditsDlg( vgui
 
 	// parent is ignored, since we want look like we're steal focus from the parent (we'll become modal below)
 #ifdef SWARM_DLL
-	SetScheme( "SwarmFrameScheme" );
+	SetScheme( "SourceScheme" );
 #endif
 
 	SetTitle("#GameUI_ThirdPartyVideo_Title", true);

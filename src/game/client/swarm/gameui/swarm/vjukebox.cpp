@@ -253,7 +253,7 @@ BaseClass( parent, panelName, false, true )
 
 	m_GplTrackList = new vgui::ListPanel( this, "GplTrackList" );
 
-	vgui::HScheme scheme = vgui::scheme()->LoadSchemeFromFile("resource/SwarmFrameScheme.res", "SwarmFrameScheme");
+	vgui::HScheme scheme = vgui::scheme()->LoadSchemeFromFile("resource/SourceScheme.res", "SourceScheme");
 	m_GplTrackList->SetScheme(scheme);
 
 	// list panel

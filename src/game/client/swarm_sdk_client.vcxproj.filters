@@ -1925,6 +1925,9 @@
     <ClCompile Include="sdk\vcreditspage.cpp">
       <Filter>Source Files\SDK\VGUI</Filter>
     </ClCompile>
+    <ClCompile Include="sdk\vmouse.cpp">
+      <Filter>Source Files\SDK\VGUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="achievement_notification_panel.h">
@@ -4145,6 +4148,9 @@
       <Filter>Source Files\From HL2</Filter>
     </ClInclude>
     <ClInclude Include="sdk\vcreditspage.h">
+      <Filter>Source Files\SDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\vmouse.h">
       <Filter>Source Files\SDK\VGUI</Filter>
     </ClInclude>
   </ItemGroup>
