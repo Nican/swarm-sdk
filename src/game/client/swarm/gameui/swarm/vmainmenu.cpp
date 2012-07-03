@@ -604,22 +604,6 @@ void MainMenu::OnCommand( const char *command )
 			CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARDMOUSE, this, true );
 		}
 	}
-	else if (!Q_strcmp(command, "Mouse"))
-	{
-		if ( ui_old_options_menu.GetBool() )
-		{
-			CBaseModPanel::GetSingleton().OpenOptionsDialog( this );
-		}
-		else
-		{
-			// standalone keyboard/mouse dialog, PC only
-			if ( m_ActiveControl )
-			{
-				m_ActiveControl->NavigateFrom( );
-			}
-			CBaseModPanel::GetSingleton().OpenWindow(WT_MOUSE, this, true );
-		}
-	}
 	else if( Q_stricmp( "#L4D360UI_Controller_Edit_Keys_Buttons", command ) == 0 )
 	{
 		FlyoutMenu::CloseActiveMenu();

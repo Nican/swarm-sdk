@@ -797,7 +797,7 @@ void Achievements::PaintBackground()
 {
 	if ( IsPC() )
 	{
-		//BaseClass::DrawDialogBackground( "#L4D360UI_My_Achievements", NULL, "#L4D360UI_My_Achievements_Desc", NULL );
+		BaseClass::DrawDialogBackground( "#L4D360UI_My_Achievements", NULL, "#L4D360UI_My_Achievements_Desc", NULL );
 
 		int wide, tall;
 		GetSize( wide, tall );

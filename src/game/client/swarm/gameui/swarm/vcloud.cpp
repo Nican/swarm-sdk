@@ -200,7 +200,7 @@ Panel* Cloud::NavigateBack()
 
 void Cloud::PaintBackground()
 {
-	//BaseClass::DrawDialogBackground( "#L4D360UI_Cloud_Title", NULL, "#L4D360UI_Cloud_Subtitle", NULL, NULL, true );
+	BaseClass::DrawDialogBackground( "#L4D360UI_Cloud_Title", NULL, "#L4D360UI_Cloud_Subtitle", NULL, NULL, true );
 }
 
 void Cloud::ApplySchemeSettings( vgui::IScheme *pScheme )

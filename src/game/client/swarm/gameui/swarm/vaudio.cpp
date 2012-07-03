@@ -832,18 +832,6 @@ void Audio::OnCommand(const char *command)
 			}
 		}
 	}
-	else if( !Q_strcmp( command, "Jukebox" ) )
-	{
-		if ( m_pVoiceTweak && m_pMicMeter2 )
-		{
-			if ( m_pMicMeter2->IsVisible() )
-			{
-				EndTestMicrophone();
-			}
-		}
-
-		CBaseModPanel::GetSingleton().OpenWindow( WT_JUKEBOX, this, true );
-	}
 	else if( Q_stricmp( "Back", command ) == 0 )
 	{
 		OnKeyCodePressed( ButtonCodeToJoystickButtonCode( KEY_XBUTTON_B, CBaseModPanel::GetSingleton().GetLastActiveUserId() ) );
@@ -1059,7 +1047,7 @@ void Audio::CancelLanguageChangeCallback()
 
 void Audio::PaintBackground()
 {
-	//BaseClass::DrawDialogBackground( "#GameUI_Audio", NULL, "#L4D360UI_AudioVideo_Desc", NULL, NULL, true );
+	BaseClass::DrawDialogBackground( "#GameUI_Audio", NULL, "#L4D360UI_AudioVideo_Desc", NULL, NULL, true );
 }
 
 void Audio::ApplySchemeSettings( vgui::IScheme *pScheme )

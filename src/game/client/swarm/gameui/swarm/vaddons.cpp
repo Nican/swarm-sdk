@@ -441,7 +441,7 @@ void Addons::ApplySchemeSettings(vgui::IScheme *pScheme)
 //=============================================================================
 void Addons::PaintBackground()
 {
-	//BaseClass::DrawDialogBackground( "#L4D360UI_My_Addons", NULL, "#L4D360UI_My_Addons_Desc", NULL );
+	BaseClass::DrawDialogBackground( "#L4D360UI_My_Addons", NULL, "#L4D360UI_My_Addons_Desc", NULL );
 }
 
 //=============================================================================

@@ -256,12 +256,6 @@ void InGameMainMenu::OnCommand( const char *command )
 		m_ActiveControl->NavigateFrom( );
 		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARDMOUSE, this, true );
 	}
-	else if (!Q_strcmp(command, "Mouse"))
-	{
-		// standalone keyboard/mouse dialog, PC only
-		m_ActiveControl->NavigateFrom( );
-		CBaseModPanel::GetSingleton().OpenWindow(WT_MOUSE, this, true );
-	}
 	else if( Q_stricmp( "#L4D360UI_Controller_Edit_Keys_Buttons", command ) == 0 )
 	{
 		FlyoutMenu::CloseActiveMenu();

@@ -54,7 +54,7 @@ void CreditsPage::Activate()
 
 void CreditsPage::PaintBackground()
 {
-	//BaseClass::DrawDialogBackground( "#GameUI_Multiplayer", NULL, "#L4D360UI_Multiplayer_Desc", NULL, NULL, true );
+	BaseClass::DrawDialogBackground( "#L4D360UI_Extras_Credits", NULL, "#L4D360UI_Extras_Credits_Tip", NULL, NULL, true );
 }
 
 void CreditsPage::ApplySchemeSettings( vgui::IScheme *pScheme )

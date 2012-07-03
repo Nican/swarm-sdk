@@ -398,16 +398,6 @@ CBaseModFrame* CBaseModPanel::OpenWindow(const WINDOW_TYPE & wt, CBaseModFrame *
 			Assert( 0 );
 			break;
 #else
-			m_Frames[wt] = new VKeyboard(this, "VKeyboard");
-#endif
-			break;
-
-		case WT_MOUSE:
-#if defined( _X360 )
-			// not for xbox
-			Assert( 0 );
-			break;
-#else
 			m_Frames[wt] = new KeyboardMouse(this, "KeyboardMouse");
 #endif
 			break;
@@ -509,16 +499,6 @@ CBaseModFrame* CBaseModPanel::OpenWindow(const WINDOW_TYPE & wt, CBaseModFrame *
 			break;
 #else
 			m_Frames[wt] = new Addons( this, "Addons" );
-#endif
-			break;
-
-		case WT_JUKEBOX:
-#if defined( _X360 )
-			// not for xbox
-			Assert( 0 );
-			break;
-#else
-			m_Frames[wt] = new VJukebox( this, "Jukebox" );
 #endif
 			break;
 

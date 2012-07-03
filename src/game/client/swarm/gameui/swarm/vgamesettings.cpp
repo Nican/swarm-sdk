@@ -144,9 +144,9 @@ void GameSettings::PaintBackground()
 		pSubtitle = chBufferSubTitle;
 	}
 	m_pTitle->SetText( pTitle );
-/*
+
 	BaseClass::DrawDialogBackground( pTitle, NULL, pSubtitle, NULL );
-	*/
+	
 }
 
 //=============================================================================

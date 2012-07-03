@@ -689,7 +689,7 @@ Panel* Multiplayer::NavigateBack()
 
 void Multiplayer::PaintBackground()
 {
-	//BaseClass::DrawDialogBackground( "#GameUI_Multiplayer", NULL, "#L4D360UI_Multiplayer_Desc", NULL, NULL, true );
+	BaseClass::DrawDialogBackground( "#GameUI_Multiplayer", NULL, "#L4D360UI_Multiplayer_Desc", NULL, NULL, true );
 }
 
 void Multiplayer::ApplySchemeSettings( vgui::IScheme *pScheme )

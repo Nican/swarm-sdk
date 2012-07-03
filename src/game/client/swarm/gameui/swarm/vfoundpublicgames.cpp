@@ -127,7 +127,7 @@ void FoundPublicGames::UpdateTitle()
 		}
 	}
 
-	//BaseClass::DrawDialogBackground( CFmtStr( "#L4D360UI_FoundPublicGames_Title_%s", gameMode ), NULL, NULL, finalString, NULL );
+	BaseClass::DrawDialogBackground( CFmtStr( "#L4D360UI_FoundPublicGames_Title_%s", gameMode ), NULL, NULL, finalString, NULL );
 
 	m_pTitle->SetText( CFmtStr( "#L4D360UI_FoundPublicGames_Title_%s", gameMode ) );
 }
@@ -135,7 +135,7 @@ void FoundPublicGames::UpdateTitle()
 //=============================================================================
 void FoundPublicGames::PaintBackground()
 {
-	/*
+	
 	const char *gameMode = m_pDataSettings->GetString( "game/mode", "campaign" );
 
 	wchar_t finalString[256] = L"";
@@ -151,7 +151,7 @@ void FoundPublicGames::PaintBackground()
 	}
 
 	BaseClass::DrawDialogBackground( CFmtStr( "#L4D360UI_FoundPublicGames_Title_%s", gameMode ), NULL, NULL, finalString, NULL );
-	*/
+	
 }
 
 //=============================================================================

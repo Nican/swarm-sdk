@@ -1436,8 +1436,8 @@ Panel* Video::NavigateBack()
 
 void Video::PaintBackground()
 {
-	//bool bIsAdvanced = ( m_btnAdvanced && !m_btnAdvanced->IsVisible() );
-	//BaseClass::DrawDialogBackground( bIsAdvanced ? "#GameUI_VideoAdvanced_Title" : "#GameUI_Video", NULL, "#L4D360UI_AudioVideo_Desc", NULL, NULL, true );
+	bool bIsAdvanced = ( m_btnAdvanced && !m_btnAdvanced->IsVisible() );
+	BaseClass::DrawDialogBackground( bIsAdvanced ? "#GameUI_VideoAdvanced_Title" : "#GameUI_Video", NULL, "#L4D360UI_AudioVideo_Desc", NULL, NULL, true );
 }
 
 void Video::ApplySchemeSettings( vgui::IScheme *pScheme )

@@ -18,11 +18,13 @@ class CDescription;
 class mpcontrol_t;
 class CCvarToggleCheckButton;
 
+
 //-----------------------------------------------------------------------------
 // Purpose: advanced bot properties page of the create game server dialog
 //-----------------------------------------------------------------------------
 class CCreateMultiplayerGameBotPage : public vgui::PropertyPage
 {
+
 	DECLARE_CLASS_SIMPLE( CCreateMultiplayerGameBotPage, vgui::PropertyPage );
 
 public:
