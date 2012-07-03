@@ -20,7 +20,6 @@
 #include "filesystem/IXboxInstaller.h"
 #include "tier2/renderutils.h"
 #include "vcreditspage.h"
-#include "vmouse.h"
 
 #ifdef _X360
 	#include "xbox/xbox_launch.h"
@@ -53,7 +52,6 @@
 #include "VInGameChapterSelect.h"
 #include "VInGameKickPlayerList.h"
 #include "VKeyboardMouse.h"
-#include "vkeyboard.h"
 #include "VVoteOptions.h"
 #include "VLoadingProgress.h"
 #include "VMainMenu.h"
