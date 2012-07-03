@@ -15,6 +15,7 @@
 		"tabPosition"			"0"
 		"PaintBackgroundType"		"0"
 	}
+	
 	"TitleDropShadow"
 	{
 		"fieldName"				"TitleDropShadow"
