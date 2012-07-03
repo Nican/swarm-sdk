@@ -1,24 +1,3 @@
-	// Command Menu Definition
-// 
-// "filename.res"
-// {
-//    "menuitem1"
-//    {
-//      "label"		"#GoToB"          // lable name shown in game, # = localized string
-//      "command"	"echo hallo"      // a command string
-//      "toggle"	"sv_cheats" 	  // a 0/1 toggle cvar 
-//      "rule"		"map"             // visibility rules : "none", "team", "map","class"	
-//      "ruledata"	"de_dust"	  // rule data, eg map name or team number
-//    }
-//   
-//   "menuitem2"
-//   {
-//	...
-//   }
-//
-//   ...
-//
-// }
 //
 //--------------------------------------------------------
 // Everything below here is editable
@@ -34,38 +13,26 @@
 	"menuitem2"
 	{
 		"label"		"#Valve_Settings"
-						
+		
 		"menuitem21"
-		{
-			"label"		"#Valve_Chat_Messages"
-			"toggle"	"hud_saytext"
-		}
-		
-		"menuitem22"
-		{
-			"label"		"#Valve_Show_Status"
-			"toggle"	"spec_drawstatus"
-		}
-		
-		"menuitem23"
 		{
 			"label"		"#Valve_Overview_Locked"
 			"toggle"	"overview_locked"
 		}
 		
-		"menuitem24"
+		"menuitem22"
 		{
 			"label"		"#Valve_Overview_Names"
 			"toggle"	"overview_names"
 		}
 		
-		"menuitem25"
+		"menuitem23"
 		{
 			"label"		"#Valve_Overview_Health"
 			"toggle"	"overview_health"
 		}
 		
-		"menuitem26"
+		"menuitem24"
 		{
 			"label"		"#Valve_Overview_Tracks"
 			"toggle"	"overview_tracks"
@@ -97,13 +64,13 @@
 		"menuitem34"
 		{
 			"label"		"#Valve_Overview_ZoomIn"
-			"command"	"overview_zoomrel 1.1"
+			"command"	"overview_zoom 1.1 0.1 rel"
 		}
 		
 		"menuitem35"
 		{
 			"label"		"#Valve_Overview_ZoomOut"
-			"command"	"overview_zoomrel 0.9"
+			"command"	"overview_zoom 0.9 0.1 rel"
 		}
 	}
 	

@@ -823,12 +823,71 @@
 		OpenTextInsetX			"2"
 	}
 	
+	"BtnCancel"
+	{
+		"ControlName"			"BaseModHybridButton"
+		"fieldName"				"BtnCancel"
+		"xpos"					"c-205"
+		"ypos"					"330" [$POSIX]
+		"ypos"					"370" [!$POSIX]
+		"zpos"					"0"
+		"wide"					"260"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"wrap"					"1"
+		"navUp"					"BtnUseRecommended"
+		"navDown"				"BtnDone"
+		"AllCaps"				"1"
+		"labelText"				"#L4D360UI_Cancel"
+		"tooltiptext"			"#L4D360UI_Tooltip_Cancel"
+		"style"					"DefaultButton"
+		"command"				"Cancel"
+		EnabledTextInsetX		"2"
+		DisabledTextInsetX		"2"
+		FocusTextInsetX			"2"
+		OpenTextInsetX			"2"
+	}	
+	
+	"BtnDone"
+	{
+		"ControlName"			"BaseModHybridButton"
+		"fieldName"				"BtnDone"
+		"xpos"					"c-205"
+		"ypos"					"350" [$POSIX]
+		"ypos"					"390" [!$POSIX]
+		"zpos"					"0"
+		"wide"					"260"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"wrap"					"1"
+		"navUp"					"BtnCancel"
+		"navDown"				"Btn3rdPartyCredits"
+		"AllCaps"				"1"
+		"labelText"				"#L4D360UI_Done"
+		"tooltiptext"			"#L4D360UI_Tooltip_Back"
+		"style"					"RedButton"
+		"command"				"Back"
+		EnabledTextInsetX		"2"
+		DisabledTextInsetX		"2"
+		FocusTextInsetX			"2"
+		OpenTextInsetX			"2"
+	}
+	
 	"Btn3rdPartyCredits"
 	{
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"Btn3rdPartyCredits"
 		"xpos"					"c-140"
-		"ypos"					"380"
+		"ypos"					"370" [$POSIX]
+		"ypos"					"410" [!$POSIX]
 		"zpos"					"0"
 		"wide"					"280"
 		"tall"					"15"
@@ -849,43 +908,5 @@
 		DisabledTextInsetX		"2"
 		FocusTextInsetX			"2"
 		OpenTextInsetX			"2"
-	}
-	
-	"BtnDone" [$WIN32]
-	{
-		"ControlName"			"CNB_Button"
-		"fieldName"				"BtnDone"
-		"xpos"		"c-264"
-		"ypos"		"r23"
-		"wide"		"117"
-		"tall"		"27"
-		"zpos"		"1"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"labelText"				"#L4D360UI_Done_Caps"
-		"command"				"Back"
-		"textAlignment"		"center"
-		"font"		"DefaultMedium"
-		"fgcolor_override"		"113 142 181 255"
-	}
-	
-	"BtnCancel" [$WIN32]
-	{
-		"ControlName"			"CNB_Button"
-		"fieldName"				"BtnCancel"
-		"xpos"		"c-127"
-		"ypos"		"r23"
-		"wide"		"117"
-		"tall"		"27"
-		"zpos"		"1"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"labelText"				"#L4D360UI_Cancel_Caps"
-		"command"				"Cancel"
-		"textAlignment"		"center"
-		"font"		"DefaultMedium"
-		"fgcolor_override"		"113 142 181 255"
 	}
 }

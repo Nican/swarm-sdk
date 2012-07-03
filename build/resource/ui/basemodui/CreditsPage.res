@@ -15,21 +15,6 @@
 		"tabPosition"		"0"
 	}
 	
-	"Title"
-	{
-		"fieldName"				"Title"
-		"xpos"				"c-350"
-		"ypos"				"52"
-		"wide"				"650"
-		"tall"				"50"
-		"zpos"				"5"
-		"font"				"HeaderFooterTitleSmall"
-		"textAlignment"			"west"
-		"ControlName"			"Label"
-		"labelText"				"#L4D360UI_Extras_Credits"
-		"fgcolor_override"		"224 224 224 255"
-	}
-	
 	"ImgBackground" [$WIN32]
 	{
 		"ControlName"			"L4DMenuBackground"

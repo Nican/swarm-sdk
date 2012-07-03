@@ -168,7 +168,7 @@
 		"tooltiptext"			"#L4D_keyboard_tip"
 		"labelText"				"#L4D360UI_KeyboardMouse"
 		"style"				"FlyoutMenuButton"
-		"command"				"Mouse"
+		"command"				"KeyboardMouse"
 	}
 
 	"BtnMultiplayer"	[$WIN32]

@@ -15,21 +15,6 @@
 		"tabPosition"		"0"
 	}
 	
-	"Title"
-	{
-		"fieldName"		"Title"
-		"xpos"		"c-266"
-		"ypos"		"101"
-		"wide"		"150"
-		"tall"		"19"
-		"zpos"		"5"
-		"font"		"DefaultExtraLarge"
-		"textAlignment"		"west"
-		"ControlName"		"Label"
-		"labelText"		"#L4D360UI_Cloud_Title"
-		"fgcolor_override"		"224 224 224 255"
-	}
-	
 	"ImgBackground"
 	{
 		"ControlName"			"L4DMenuBackground"
