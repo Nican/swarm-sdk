@@ -289,8 +289,8 @@ CMultiplayRules::CMultiplayRules()
 
 		// suitcharger
 
-		ConVarRef suitcharger( "sk_suitcharger" );
-		suitcharger.SetValue( 30 );
+	//	ConVarRef suitcharger( "sk_suitcharger" );
+	//	suitcharger.SetValue( 30 );
 
 	}
 

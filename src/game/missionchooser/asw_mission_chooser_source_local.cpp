@@ -16,7 +16,7 @@ static FileFindHandle_t	g_hsavedfind = FILESYSTEM_INVALID_FIND_HANDLE;
 
 #define ASW_SKILL_POINTS_PER_MISSION 2		// keep in sync with asw_shareddefs.h (we need a h shared between missionchooser and game dlls...)
 
-ConVar asw_max_saves("asw_max_saves", "200", FCVAR_ARCHIVE | FCVAR_DEVELOPMENTONLY, "Maximum number of multiplayer saves that will be stored on this server.");
+// ConVar asw_max_saves("asw_max_saves", "200", FCVAR_ARCHIVE | FCVAR_DEVELOPMENTONLY, "Maximum number of multiplayer saves that will be stored on this server.");
 
 namespace
 {
@@ -709,32 +709,32 @@ void CASW_Mission_Chooser_Source_Local::AddToSavedCampaignList(const char *szSav
 	}
 	pSaveKeyValues->deleteThis();
 
-	// check if there's now too many save games
-	int iNumMultiplayer = GetNumSavedCampaigns(true, NULL);
-	if (iNumMultiplayer > asw_max_saves.GetInt())
-	{
-		// find the oldest one
-		ASW_Mission_Chooser_Saved_Campaign* pChosen = false;
-		int iChosen = -1;
-		for (int i=m_SavedCampaignList.Count()-1; i>=0; i--)
-		{
-			if (m_SavedCampaignList[i].m_bMultiplayer)
-			{
-				pChosen = &m_SavedCampaignList[i];
-				iChosen = i;
-				break;
-			}			
-		}
-		// delete if found
-		if (iChosen != -1 && pChosen)
-		{
-			char buffer[MAX_PATH];
-			Q_snprintf(buffer, sizeof(buffer), "save/%s", pChosen->m_szSaveName);
-			Msg("Deleting save %s as we have too many\n", buffer);
-			g_pFullFileSystem->RemoveFile( buffer, "GAME" );
-			m_SavedCampaignList.Remove(iChosen);
-		}
-	}
+	//// check if there's now too many save games
+	//int iNumMultiplayer = GetNumSavedCampaigns(true, NULL);
+	//if (iNumMultiplayer > asw_max_saves.GetInt())
+	//{
+	//	// find the oldest one
+	//	ASW_Mission_Chooser_Saved_Campaign* pChosen = false;
+	//	int iChosen = -1;
+	//	for (int i=m_SavedCampaignList.Count()-1; i>=0; i--)
+	//	{
+	//		if (m_SavedCampaignList[i].m_bMultiplayer)
+	//		{
+	//			pChosen = &m_SavedCampaignList[i];
+	//			iChosen = i;
+	//			break;
+	//		}			
+	//	}
+	//	// delete if found
+	//	if (iChosen != -1 && pChosen)
+	//	{
+	//		char buffer[MAX_PATH];
+	//		Q_snprintf(buffer, sizeof(buffer), "save/%s", pChosen->m_szSaveName);
+	//		Msg("Deleting save %s as we have too many\n", buffer);
+	//		g_pFullFileSystem->RemoveFile( buffer, "GAME" );
+	//		m_SavedCampaignList.Remove(iChosen);
+	//	}
+	//}
 }
 
 void CASW_Mission_Chooser_Source_Local::BuildSavedCampaignList()

@@ -15,7 +15,7 @@ bool CLevelTheme::s_bLoadedThemes = false;
 
 static FileFindHandle_t	g_hthemefind = FILESYSTEM_INVALID_FIND_HANDLE;
 
-ConVar asw_tilegen_theme( "asw_tilegen_theme", "Rydberg", FCVAR_ARCHIVE | FCVAR_DEVELOPMENTONLY, "Default theme selected in TileGen" );
+// ConVar asw_tilegen_theme( "asw_tilegen_theme", "Rydberg", FCVAR_ARCHIVE | FCVAR_DEVELOPMENTONLY, "Default theme selected in TileGen" );
 
 // Loads in all level themes found in tilegen/themes/
 void CLevelTheme::LoadLevelThemes()
@@ -41,22 +41,22 @@ void CLevelTheme::LoadLevelThemes()
 		KeyValues *pThemeKeyValues = new KeyValues( filename );
 		if (pThemeKeyValues->LoadFromFile(g_pFullFileSystem, szFullFileName, "GAME"))
 		{
-			CLevelTheme* pTheme = new CLevelTheme(pThemeKeyValues->GetString("ThemeName"),
-												pThemeKeyValues->GetString("ThemeDescription"),
-												pThemeKeyValues->GetInt("VMFTweak", 0) > 0 );
-			pTheme->m_bSkipErrorCheck = ( pThemeKeyValues->GetInt( "SkipErrorCheck", 0 ) > 0 );
-			sscanf( pThemeKeyValues->GetString( "AmbientLight" ) , "%f %f %f", &pTheme->m_vecAmbientLight.x, &pTheme->m_vecAmbientLight.y, &pTheme->m_vecAmbientLight.z );
-			// temp to avoid the 0,0,0 losing ambient light bug
-			if ( pTheme->m_vecAmbientLight == vec3_origin )
-			{
-				pTheme->m_vecAmbientLight.x = 1;
-				pTheme->m_vecAmbientLight.y = 1;
-				pTheme->m_vecAmbientLight.z = 1;
-			}
-			pTheme->LoadRoomTemplates();
-			s_LevelThemes.AddToTail(pTheme);
-			if (!Q_stricmp(pTheme->m_szName, asw_tilegen_theme.GetString()))	// default to the Rydberg theme
-				SetCurrentTheme(pTheme);
+			//CLevelTheme* pTheme = new CLevelTheme(pThemeKeyValues->GetString("ThemeName"),
+			//									pThemeKeyValues->GetString("ThemeDescription"),
+			//									pThemeKeyValues->GetInt("VMFTweak", 0) > 0 );
+			//pTheme->m_bSkipErrorCheck = ( pThemeKeyValues->GetInt( "SkipErrorCheck", 0 ) > 0 );
+			//sscanf( pThemeKeyValues->GetString( "AmbientLight" ) , "%f %f %f", &pTheme->m_vecAmbientLight.x, &pTheme->m_vecAmbientLight.y, &pTheme->m_vecAmbientLight.z );
+			//// temp to avoid the 0,0,0 losing ambient light bug
+			//if ( pTheme->m_vecAmbientLight == vec3_origin )
+			//{
+			//	pTheme->m_vecAmbientLight.x = 1;
+			//	pTheme->m_vecAmbientLight.y = 1;
+			//	pTheme->m_vecAmbientLight.z = 1;
+			//}
+			//pTheme->LoadRoomTemplates();
+			//s_LevelThemes.AddToTail(pTheme);
+			//if (!Q_stricmp(pTheme->m_szName, asw_tilegen_theme.GetString()))	// default to the Rydberg theme
+			//	SetCurrentTheme(pTheme);
 		}
 		else
 		{
@@ -79,7 +79,7 @@ void CLevelTheme::SetCurrentTheme(CLevelTheme* pTheme)
 	if (s_pCurrentTheme)
 		s_pPreviousTheme = s_pCurrentTheme;
 	s_pCurrentTheme = pTheme;
-	asw_tilegen_theme.SetValue( pTheme->m_szName );
+	//asw_tilegen_theme.SetValue( pTheme->m_szName );
 }
 
 CLevelTheme::CLevelTheme(const char *szName, const char *szDescription, bool bRequiresVMFTweak)

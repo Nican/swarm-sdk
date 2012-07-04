@@ -178,7 +178,7 @@ CBaseModPanel::CBaseModPanel(): BaseClass(0, "CBaseModPanel"),
 	// needed to allow engine to exec startup commands (background map signal is 1 frame behind) 
 	m_DelayActivation = 3;
 
-	m_UIScheme = vgui::scheme()->LoadSchemeFromFileEx( 0, "resource/SwarmScheme.res", "SwarmScheme" );
+	m_UIScheme = vgui::scheme()->LoadSchemeFromFileEx( 0, "resource/SourceScheme.res", "SourceScheme" );
 	SetScheme( m_UIScheme );
 
 	// Only one user on the PC, so set it now

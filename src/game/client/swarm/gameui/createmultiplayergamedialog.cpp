@@ -8,7 +8,7 @@
 #include "CreateMultiplayerGameDialog.h"
 #include "CreateMultiplayerGameServerPage.h"
 #include "CreateMultiplayerGameGameplayPage.h"
-#include "CreateMultiplayerGameBotPage.h"
+// #include "CreateMultiplayerGameBotPage.h"
 
 #include "EngineInterface.h"
 #include "ModInfo.h"
@@ -45,7 +45,7 @@ CCreateMultiplayerGameDialog::CCreateMultiplayerGameDialog(vgui::Panel *parent) 
 
 	m_pServerPage = new CCreateMultiplayerGameServerPage(this, "ServerPage");
 	m_pGameplayPage = new CCreateMultiplayerGameGameplayPage(this, "GameplayPage");
-	m_pBotPage = NULL;
+//	m_pBotPage = NULL;
 
 	AddPage(m_pServerPage, "#GameUI_Server");
 	AddPage(m_pGameplayPage, "#GameUI_Game");
@@ -69,9 +69,9 @@ CCreateMultiplayerGameDialog::CCreateMultiplayerGameDialog(vgui::Panel *parent) 
 	{
 		// add a page of advanced bot controls
 		// NOTE: These controls will use the bot keys to initialize their values
-		m_pBotPage = new CCreateMultiplayerGameBotPage( this, "BotPage", m_pSavedData );
-		AddPage( m_pBotPage, "#GameUI_CPUPlayerOptions" );
-		m_pServerPage->EnableBots( m_pSavedData );
+//		m_pBotPage = new CCreateMultiplayerGameBotPage( this, "BotPage", m_pSavedData );
+//		AddPage( m_pBotPage, "#GameUI_CPUPlayerOptions" );
+//		m_pServerPage->EnableBots( m_pSavedData );
 	}
 }
 

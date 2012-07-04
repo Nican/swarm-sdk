@@ -15,7 +15,7 @@
 
 class CCreateMultiplayerGameServerPage;
 class CCreateMultiplayerGameGameplayPage;
-class CCreateMultiplayerGameBotPage;
+// class CCreateMultiplayerGameBotPage;
 
 
 //-----------------------------------------------------------------------------
@@ -35,7 +35,7 @@ protected:
 private:
 	CCreateMultiplayerGameServerPage *m_pServerPage;
 	CCreateMultiplayerGameGameplayPage *m_pGameplayPage;
-	CCreateMultiplayerGameBotPage *m_pBotPage;
+//	CCreateMultiplayerGameBotPage *m_pBotPage;
 
 	bool m_bBotsEnabled;
 
