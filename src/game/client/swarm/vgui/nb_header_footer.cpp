@@ -234,7 +234,7 @@ CNB_Header_Footer::CNB_Header_Footer( vgui::Panel *parent, const char *name ) : 
 	m_bMovieEnabled = true;
 	m_bGradientBarEnabled = 0;
 	m_nTitleStyle = NB_TITLE_MEDIUM;
-	m_nBackgroundStyle = NB_BACKGROUND_TRANSPARENT_BLUE;
+	m_nBackgroundStyle = NB_BACKGROUND_NONE;
 	m_nGradientBarY = 0;
 	m_nGradientBarHeight = 480;
 }
@@ -444,32 +444,32 @@ CNB_Gradient_Bar::CNB_Gradient_Bar( vgui::Panel *parent, const char *name ) : Ba
 
 void CNB_Gradient_Bar::PaintBackground()
 {
-	int wide, tall;
-	GetSize( wide, tall );
+	//int wide, tall;
+	//GetSize( wide, tall );
 
-	int y = 0;
-	int iHalfWide = wide * 0.5f;
+	//int y = 0;
+	//int iHalfWide = wide * 0.5f;
 
-	float flAlpha = 200.0f / 255.0f;
+	//float flAlpha = 200.0f / 255.0f;
 
 	// fill bar background
-	vgui::surface()->DrawSetColor( Color( 0, 0, 0, 255 * flAlpha ) );
-	vgui::surface()->DrawFilledRect( 0, y, wide, y + tall );
+	//vgui::surface()->DrawSetColor( Color( 0, 0, 0, 255 * flAlpha ) );
+	//vgui::surface()->DrawFilledRect( 0, y, wide, y + tall );
 
-	vgui::surface()->DrawSetColor( Color( 53, 86, 117, 255 * flAlpha ) );
+	//vgui::surface()->DrawSetColor( Color( 53, 86, 117, 255 * flAlpha ) );
 
-	int nBarPosY = y + YRES( 4 );
-	int nBarHeight = tall - YRES( 8 );
-	vgui::surface()->DrawFilledRectFade( iHalfWide, nBarPosY, wide, nBarPosY + nBarHeight, 255, 0, true );
-	vgui::surface()->DrawFilledRectFade( 0, nBarPosY, iHalfWide, nBarPosY + nBarHeight, 0, 255, true );
+	//int nBarPosY = y + YRES( 4 );
+	//int nBarHeight = tall - YRES( 8 );
+	//vgui::surface()->DrawFilledRectFade( iHalfWide, nBarPosY, wide, nBarPosY + nBarHeight, 255, 0, true );
+	//vgui::surface()->DrawFilledRectFade( 0, nBarPosY, iHalfWide, nBarPosY + nBarHeight, 0, 255, true );
 	// draw highlights
-	nBarHeight = YRES( 2 );
-	nBarPosY = y;
-	vgui::surface()->DrawSetColor( Color( 97, 210, 255, 255 * flAlpha ) );
-	vgui::surface()->DrawFilledRectFade( iHalfWide, nBarPosY, wide, nBarPosY + nBarHeight, 255, 0, true );
-	vgui::surface()->DrawFilledRectFade( 0, nBarPosY, iHalfWide, nBarPosY + nBarHeight, 0, 255, true );
+	//nBarHeight = YRES( 2 );
+	//nBarPosY = y;
+	//vgui::surface()->DrawSetColor( Color( 97, 210, 255, 255 * flAlpha ) );
+	//vgui::surface()->DrawFilledRectFade( iHalfWide, nBarPosY, wide, nBarPosY + nBarHeight, 255, 0, true );
+	//vgui::surface()->DrawFilledRectFade( 0, nBarPosY, iHalfWide, nBarPosY + nBarHeight, 0, 255, true );
 
-	nBarPosY = y + tall - YRES( 2 );
-	vgui::surface()->DrawFilledRectFade( iHalfWide, nBarPosY, wide, nBarPosY + nBarHeight, 255, 0, true );
-	vgui::surface()->DrawFilledRectFade( 0, nBarPosY, iHalfWide, nBarPosY + nBarHeight, 0, 255, true );
+	//nBarPosY = y + tall - YRES( 2 );
+	//vgui::surface()->DrawFilledRectFade( iHalfWide, nBarPosY, wide, nBarPosY + nBarHeight, 255, 0, true );
+	//vgui::surface()->DrawFilledRectFade( 0, nBarPosY, iHalfWide, nBarPosY + nBarHeight, 0, 255, true );
 }

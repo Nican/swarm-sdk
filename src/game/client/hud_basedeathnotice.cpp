@@ -84,7 +84,7 @@ bool CHudBaseDeathNotice::ShouldDraw( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-Color CHudBaseDeathNotice::GetTeamColor( int iTeamNumber )
+Color CHudBaseDeathNotice::GetTeamColor( int iTeamNumber, bool localplayerinvolved )
 {
 	// By default, return the standard team color.  Subclasses may override this.
 	return g_PR->GetTeamColor( iTeamNumber );
@@ -165,8 +165,11 @@ void CHudBaseDeathNotice::Paint()
 			
 		if ( killer[0] )
 		{
+			//Draw drop shadow
+			//DrawText( x+1, yText+1, m_hTextFont, Color(0,0,0,255), killer );
+
 			// Draw killer's name
-			DrawText( x, yText, m_hTextFont, GetTeamColor( msg.Killer.iTeam ), killer );
+			DrawText( x, yText, m_hTextFont, GetTeamColor( msg.Killer.iTeam, msg.bLocalPlayerInvolved ), killer );
 			x += iKillerTextWide;
 		}
 
@@ -186,12 +189,18 @@ void CHudBaseDeathNotice::Paint()
 				iVictimTextOffset -= iDeathInfoTextWide;
 			}
 
-			DrawText( x + iDeathInfoOffset, yText, m_hTextFont, Color(255,255,255,255), msg.wzInfoText );
+			//Draw Drop shadow
+			//DrawText( (x + iDeathInfoOffset)+1, yText+1, m_hTextFont, Color(0,0,0,255), msg.wzInfoText );
+
+			DrawText( x + iDeathInfoOffset, yText, m_hTextFont, GetTeamColor( msg.Victim.iTeam, msg.bLocalPlayerInvolved ), msg.wzInfoText );
 			x += iDeathInfoTextWide;
 		}
 
+		//Draw a drop shadow
+		//DrawText( (x + iVictimTextOffset)+1, yText+1, m_hTextFont, Color(0,0,0,255), victim );
+
 		// Draw victims name
-		DrawText( x + iVictimTextOffset, yText, m_hTextFont, GetTeamColor( msg.Victim.iTeam ), victim );
+		DrawText( x + iVictimTextOffset, yText, m_hTextFont, GetTeamColor( msg.Victim.iTeam, msg.bLocalPlayerInvolved ), victim );
 		x += iVictimTextWide;
 	}
 }
@@ -417,50 +426,50 @@ void CHudBaseDeathNotice::FireGameEvent( IGameEvent *event )
 		// print a log message
 		Msg( "%s defended %s for team #%d\n", m_DeathNotices[iMsg].Killer.szName, m_DeathNotices[iMsg].Victim.szName, m_DeathNotices[iMsg].Killer.iTeam );
 	}
-	else if ( FStrEq( "teamplay_flag_event", pszEventName ) )
+		else if ( FStrEq( "teamplay_flag_event", pszEventName ) )
 	{
-		const char *pszMsgKey = NULL;
+		/*const char *pszMsgKey = NULL;
 		int iEventType = event->GetInt( "eventtype" );
 		switch ( iEventType )
 		{
-		//case TF_FLAGEVENT_PICKUP: 
-		//	pszMsgKey = "#Msg_PickedUpFlag"; 
-		//	break;
-		//case TF_FLAGEVENT_CAPTURE: 
-		//	pszMsgKey = "#Msg_CapturedFlag"; 
-		//	break;
-		//case TF_FLAGEVENT_DEFEND: 
-		//	pszMsgKey = "#Msg_DefendedFlag"; 
-		//	break;
+		case TF_FLAGEVENT_PICKUP: 
+			pszMsgKey = "#Msg_PickedUpFlag"; 
+			break;
+		case TF_FLAGEVENT_CAPTURE: 
+			pszMsgKey = "#Msg_CapturedFlag"; 
+			break;
+		case TF_FLAGEVENT_DEFEND: 
+			pszMsgKey = "#Msg_DefendedFlag"; 
+			break;*/
 
 		// Add this when we can get localization for it
 		//case TF_FLAGEVENT_DROPPED: 
 		//	pszMsgKey = "#Msg_DroppedFlag"; 
 		//	break;
 
-		default:
-			// unsupported, don't put anything up			
-			m_DeathNotices.Remove( iMsg );
-			return;
-		}
+		//default:
+		//	// unsupported, don't put anything up			
+		//	m_DeathNotices.Remove( iMsg );
+		//	return;
+		//}
 
-		wchar_t *pwzEventText = g_pVGuiLocalize->Find( pszMsgKey );
-		Assert( pwzEventText );
-		if ( pwzEventText )
-		{
-			V_wcsncpy( m_DeathNotices[iMsg].wzInfoText, pwzEventText, sizeof( m_DeathNotices[iMsg].wzInfoText ) );
-		}
-		else
-		{
-			V_memset( m_DeathNotices[iMsg].wzInfoText, 0, sizeof( m_DeathNotices[iMsg].wzInfoText ) );
-		}
+		//wchar_t *pwzEventText = g_pVGuiLocalize->Find( pszMsgKey );
+		//Assert( pwzEventText );
+		//if ( pwzEventText )
+		//{
+		//	V_wcsncpy( m_DeathNotices[iMsg].wzInfoText, pwzEventText, sizeof( m_DeathNotices[iMsg].wzInfoText ) );
+		//}
+		//else
+		//{
+		//	V_memset( m_DeathNotices[iMsg].wzInfoText, 0, sizeof( m_DeathNotices[iMsg].wzInfoText ) );
+		//}
 
-		int iPlayerIndex = event->GetInt( "player" );
-		const char *szPlayerName = g_PR->GetPlayerName( iPlayerIndex );
-		Q_strncpy( m_DeathNotices[iMsg].Killer.szName, szPlayerName, ARRAYSIZE( m_DeathNotices[iMsg].Killer.szName ) );
-		m_DeathNotices[iMsg].Killer.iTeam = g_PR->GetTeam( iPlayerIndex );
-		if ( iLocalPlayerIndex == iPlayerIndex )
-			m_DeathNotices[iMsg].bLocalPlayerInvolved = true;
+		//int iPlayerIndex = event->GetInt( "player" );
+		//const char *szPlayerName = g_PR->GetPlayerName( iPlayerIndex );
+		//Q_strncpy( m_DeathNotices[iMsg].Killer.szName, szPlayerName, ARRAYSIZE( m_DeathNotices[iMsg].Killer.szName ) );
+		//m_DeathNotices[iMsg].Killer.iTeam = g_PR->GetTeam( iPlayerIndex );
+		//if ( iLocalPlayerIndex == iPlayerIndex )
+		//	m_DeathNotices[iMsg].bLocalPlayerInvolved = true;
 	}
 
 	OnGameEvent( event, m_DeathNotices[iMsg] );

@@ -17,7 +17,6 @@
 #include "GameStats.h"
 #include "obstacle_pushaway.h"
 #include "in_buttons.h"
-// Somme - Ragdoll Fix
 #include "physics_prop_ragdoll.h"
 #include "particle_parse.h"
 // memdbgon must be the last include file in a .cpp file!!!

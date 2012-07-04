@@ -41,7 +41,7 @@ struct DeathNoticeItem
 	DeathNoticePlayer	Killer;
 	DeathNoticePlayer   Victim;
 	char		szIcon[32];		// name of icon to display
-	wchar_t		wzInfoText[32];	// any additional text to display next to icon
+	wchar_t		wzInfoText[48];	// any additional text to display next to icon
 	CHudTexture *iconDeath;
 	bool		bSelfInflicted;
 	float		flCreationTime;
@@ -71,7 +71,7 @@ public:
 	void FireGameEvent( IGameEvent *event );
 
 protected:
-	virtual Color GetTeamColor( int iTeamNumber );
+	virtual Color GetTeamColor( int iTeamNumber, bool localplayerinvolved );
 	virtual void OnGameEvent( IGameEvent *event, DeathNoticeItem &deathNoticeItem ) {};
 	void DrawText( int x, int y, vgui::HFont hFont, Color clr, const wchar_t *szText );
  int AddDeathNoticeItem();

@@ -337,7 +337,7 @@ void CTextWindow::SetData( int type, const char *title, const char *message, con
 
 void CTextWindow::UpdateContents( void )
 {
-	SetTitle( m_szTitle, false );
+	//SetTitle( m_szTitle, false );
 
 	if ( m_pTitleLabel )
 	{

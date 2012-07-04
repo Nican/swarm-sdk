@@ -206,7 +206,7 @@ enum SDKPlayerState
 
 	NUM_PLAYER_STATES
 };
-#define SDK_PLAYER_DEATH_TIME	5.0f	//Minimum Time before respawning
+#define SDK_PLAYER_DEATH_TIME	1.0f	//Minimum Time before respawning
 
 // Special Damage types
 enum

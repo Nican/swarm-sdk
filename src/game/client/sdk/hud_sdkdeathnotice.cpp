@@ -39,7 +39,7 @@ public:
 
 protected:	
 	virtual void OnGameEvent( IGameEvent *event, DeathNoticeItem &msg );
-	virtual Color GetTeamColor( int iTeamNumber );
+	virtual Color GetTeamColor( int iTeamNumber, bool localplayerinvolved );
 
 private:
 	void AddAdditionalMsg( int iKillerID, int iVictimID, const char *pMsgKey );
@@ -83,6 +83,10 @@ void SDKHudDeathNotice::OnGameEvent( IGameEvent *event, DeathNoticeItem &msg )
 
 		// if there was an assister, put both the killer's and assister's names in the death message
 		int iAssisterID = engine->GetPlayerForUserID( event->GetInt( "assister" ) );
+
+		//Null out the assister ID if its fall damage.
+		if ( event->GetInt( "damagebits" ) & DMG_FALL ) iAssisterID = 0;
+
 		const char *assister_name = ( iAssisterID > 0 ? g_PR->GetPlayerName( iAssisterID ) : NULL );
 		if ( assister_name )
 		{
@@ -96,7 +100,8 @@ void SDKHudDeathNotice::OnGameEvent( IGameEvent *event, DeathNoticeItem &msg )
 		}
 
 		// if this death involved a player dominating another player or getting revenge on another player, add an additional message
-		// mentioning that
+		// mentioning that  
+		// FIXFIX: This method is not working on the main branch right now and I'm sick of seeing "ERRORNAME"
 		int iKillerID = engine->GetPlayerForUserID( event->GetInt( "attacker" ) );
 		int iVictimID = engine->GetPlayerForUserID( event->GetInt( "userid" ) );
 
@@ -128,7 +133,7 @@ void SDKHudDeathNotice::OnGameEvent( IGameEvent *event, DeathNoticeItem &msg )
 				if ( pMsg )
 				{
 					V_wcsncpy( msg.wzInfoText, pMsg, sizeof( msg.wzInfoText ) );
-				}			
+				}
 				break;
 			}
 		default:
@@ -161,7 +166,7 @@ void SDKHudDeathNotice::AddAdditionalMsg( int iKillerID, int iVictimID, const ch
 //-----------------------------------------------------------------------------
 // Purpose: returns the color to draw text in for this team.  
 //-----------------------------------------------------------------------------
-Color SDKHudDeathNotice::GetTeamColor( int iTeamNumber )
+Color SDKHudDeathNotice::GetTeamColor( int iTeamNumber, bool localplayerinvolved )
 {
 	switch ( iTeamNumber )
 	{
