@@ -19,8 +19,8 @@ Scheme
 	{
 		// base colors
 		"White"				"255 255 255 255"
-		"OffWhite"			"221 221 221 255"
-		"DullWhite"			"211 211 211 255"
+		"OffWhite"			"216 216 216 255"
+		"DullWhite"			"142 142 142 255"
 		"Gray"				"64 64 64 255"
 		"MediumGray"        "145 145 145 255"
 		"DarkGrey"			"128 128 128 255"
@@ -42,6 +42,12 @@ Scheme
 		"Black"				"0 0 0 255"
 
 		"Blank"				"0 0 0 0"
+		
+		"SteamLightGreen"	"157 194 80 255"
+		"AchievementsLightGrey"		"79 79 79 255"
+		"AchievementsDarkGrey"		"55 55 55 255"
+		"AchievementsInactiveFG"	"130 130 130 255"
+		
 		"Green"				"0 128 0 255"
 		"LightBrown"		"120 69 24 255"
 		"DarkBrown"			"57 49 38 255"
@@ -344,11 +350,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"
-				"tall"		"10"
-				"weight"	"100"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"500"
 			}
 		}
 			
@@ -380,23 +384,19 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"
-				"tall"		"10"
-				"weight"	"100"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
-				"underline"	"1"
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"500"
+				"underline" "1"
 			}
 		}
 		"DefaultVerySmall"
 		{
 			"1"
 			{
-				"name"		"Verdana" //"Neo Sans"
-				"tall"		"7"
-				"weight"	"100"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"		"Tahoma"
+				"tall"		"12"
+				"weight"	"0"
 			}
 		}
 		"DefaultVerySmallBlur"
@@ -415,11 +415,19 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"Neo Sans"
-				"tall"		"8"
-				"weight"	"100"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"		"Tahoma"
+				"tall"		"12"
+				"weight"	"0"
+			}
+		}
+		"DefaultSmallDropShadow"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"13"
+				"weight"	"0"
+				"dropshadow" "1"
 			}
 		}
 		"DefaultSmallBlur"
@@ -461,13 +469,115 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"
-				"tall"		"15"
-				"weight"	"100"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"		"Tahoma"
+				"tall"		"18"
+				"weight"	"0"
 			}
 		}
+		"UiBold"
+		{
+			"1"	[$WIN32]
+			{
+				"name"		"Tahoma"
+				"tall"		"12"
+				"weight"	"1000"
+			}
+			"1"	[$X360]
+			{
+				"name"		"Tahoma"
+				"tall"		"24"
+				"weight"	"2000"
+				"outline"	"1"
+			}
+		}
+		"ChapterTitle"	[$X360]
+		{
+			"1"
+			{
+				"name"			"Tahoma"
+				"tall"			"20"
+				"tall_hidef"	"28"
+				"weight"		"2000"
+				"outline"		"1"
+			}
+		}
+		"ChapterTitleBlur"	[$X360]
+		{
+			"1"
+			{
+				"name"			"Tahoma"
+				"tall"			"20"
+				"tall_hidef"	"28"
+				"weight"		"2000"
+				"blur"			"3"
+				"blur_hidef"	"5"
+			}
+		}
+		"MenuLarge"
+		{
+			"1"	[$WIN32]
+			{
+				"name"		"Verdana"
+				"tall"		"16"
+				"weight"	"600"
+				"antialias" "1"
+			}
+			"1"	[$X360]
+			{
+				"name"		"Verdana"
+				"tall"			"14"
+				"tall_hidef"	"20"
+				"weight"	"1200"
+				"antialias" "1"
+				"outline" "1"
+			}
+		}
+		"AchievementTitleFont"
+		{
+			"1"
+			{
+				"name"		"Verdana"
+				"tall"		"20"
+				"weight"	"1200"
+				"antialias" "1"
+				"outline" "1"
+			}
+		}
+		
+		"AchievementTitleFontSmaller"
+		{
+			"1"
+			{
+				"name"		"Verdana"
+				"tall"		"18"
+				"weight"	"1200"
+				"antialias" "1"
+				//"outline" "1"
+			}
+		}
+
+		"AchievementDescriptionFont"
+		{
+			"1"
+			{
+				"name"		"Verdana"
+				"tall"		"15"
+				"weight"	"1200"
+				"antialias" "1"
+				"outline" "1"
+				"yres"		"0 480"
+			}
+			"2"
+			{
+				"name"		"Verdana"
+				"tall"		"20"
+				"weight"	"1200"
+				"antialias" "1"
+				"outline" "1"
+				"yres"	 "481 10000"
+			}
+		}
+		
 		// DefaultExtraLarge
 		"DefaultExtraLarge"
 		{
@@ -485,10 +595,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"
+				"name"		"Tahoma"
 				"tall"		"16"
-				"weight"	"100"
-				"antialias"	"1"
+				"weight"	"1000"
 			}
 		}
 
@@ -582,12 +691,16 @@ Scheme
 
 		GameUIButtons
 		{
-			"1"
+			"1"	[$X360]
 			{
 				"bitmap"	"1"
 				"name"		"Buttons"
-				"scalex"	"0.80"
-				"scaley"	"0.80"
+				"scalex"	"0.63"
+				"scaley"	"0.63"
+				"scalex_hidef"	"1.0"
+				"scaley_hidef"	"1.0"
+				"scalex_lodef"	"0.75"
+				"scaley_lodef"	"0.75"
 			}
 		}
 
@@ -626,6 +739,15 @@ Scheme
 				"antialias"	"1"
 			}
 		}
+		"ConsoleText"
+		{
+			"1"
+			{
+				"name"		"Lucida Console"
+				"tall"		"10"
+				"weight"	"500"
+			}
+		}
 
 		// this is the symbol font
 		"Marlett"
@@ -636,10 +758,9 @@ Scheme
 				"tall"		"14"
 				"weight"	"0"
 				"symbol"	"1"
-				"range"		"0x0000 0x007F"	//	Basic Latin
-				"antialias"	"1"
 			}
 		}
+		
 		"MarlettHalf"
 		{
 			"1"
@@ -652,6 +773,330 @@ Scheme
 				"antialias"	"1"
 			}
 		}
+
+		"Trebuchet24"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"24"
+				"weight"	"900"
+			}
+		}
+
+		"Trebuchet20"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"20"
+				"weight"	"900"
+			}
+		}
+
+		"Trebuchet18"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"18"
+				"weight"	"900"
+			}
+		}
+		
+		// HUD numbers
+		// We use multiple fonts to 'pulse' them in the HUD, hence the need for many of near size
+		"HUDNumber"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"40"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber1"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"41"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber2"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"42"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber3"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"43"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber4"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"44"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber5"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"45"
+				"weight"	"900"
+			}
+		}
+		
+		"DefaultFixed"
+		{
+			"1"
+			{
+				"name"		"Lucida Console"
+				"tall"		"10"
+				"weight"	"0"
+			}
+//			"1"
+//			{
+//				"name"		"FixedSys"
+//				"tall"		"20"
+//				"weight"	"0"
+//			}
+		}
+
+		"DefaultFixedDropShadow"
+		{
+			"1"
+			{
+				"name"		"Lucida Console"
+				"tall"		"10"
+				"weight"	"0"
+				"dropshadow" "1"
+			}
+//			"1"
+//			{
+//				"name"		"FixedSys"
+//				"tall"		"20"
+//				"weight"	"0"
+//			}
+		}
+		"CloseCaption_Normal"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"500"
+			}
+		}
+		"CloseCaption_Italic"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"500"
+				"italic"	"1"
+			}
+		}
+		"CloseCaption_Bold"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"900"
+			}
+		}
+		"CloseCaption_BoldItalic"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"900"
+				"italic"	"1"
+			}
+		}
+
+		TitleFont
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"72"
+				"weight"	"400"
+				"antialias"	"1"
+				"custom"	"1"
+			}
+		}
+
+		TitleFont2
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"120"
+				"weight"	"400"
+				"antialias"	"1"
+				"custom"	"1"
+			}
+		}
+
+		AppchooserGameTitleFont	[$X360]
+		{
+			"1"
+			{
+				"name"			"Trebuchet MS"
+				"tall"			"16"
+				"tall_hidef"	"24"
+				"weight"		"900"
+				"antialias"		"1"
+			}
+		}
+
+		AppchooserGameTitleFontBlur	[$X360]
+		{
+			"1"
+			{
+				"name"			"Trebuchet MS"
+				"tall"			"16"
+				"tall_hidef"	"24"
+				"weight"		"900"
+				"blur"			"3"
+				"blur_hidef"	"5"
+				"antialias"		"1"
+			}
+		}
+		
+		StatsTitle	[$WIN32]
+		{
+			"1"
+			{
+				"name"			"Arial"
+				"weight"		"2000"
+				"tall"			"20"
+				"antialias"		"1"
+			}
+		}
+		
+		StatsText	[$WIN32]
+		{
+			"1"
+			{
+				"name"			"Arial"
+				"weight"		"2000"
+				"tall"			"18"
+				"antialias"		"1"
+			}
+		}
+		
+		AchievementItemTitle	[$WIN32]
+		{
+			"1"
+			{
+				"name"			"Arial"
+				"weight"		"1500"
+				"tall"			"16"
+				"antialias"		"1"
+			}
+		}
+		
+		AchievementItemTitleLarge	[$WIN32]
+		{
+			"1"
+			{
+				"name"			"Arial"
+				"weight"		"1500"
+				"tall"			"18"
+				"antialias"		"1"
+			}
+		}
+		
+		AchievementItemDescription	[$WIN32]
+		{
+			"1"
+			{
+				"name"			"Arial"
+				"weight"		"1000"
+				"tall"			"14"
+				"antialias"		"1"
+			}
+		}
+
+		
+		"ServerBrowserTitle"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"35"
+				"tall_lodef"	"40"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+
+		"ServerBrowserSmall"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"480 599"
+			}
+			"2"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"600 767"
+			}
+			"3"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"768 1023"
+				"antialias"	"1"
+			}
+			"4"
+			{
+				"name"		"Tahoma"
+				"tall"		"19"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"1024 1199"
+				"antialias"	"1"
+			}
+			"5"
+			{
+				"name"		"Tahoma"
+				"tall"		"19"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"1200 6000"
+				"antialias"	"1"
+			}
+		}
 	}
 
 	//
@@ -660,14 +1105,27 @@ Scheme
 	// describes all the border types
 	Borders
 	{
-		BaseBorder
+		BaseBorder		DepressedBorder
+		ButtonBorder	RaisedBorder
+		ComboBoxBorder	DepressedBorder
+		MenuBorder		RaisedBorder
+		BrowserBorder	DepressedBorder
+		PropertySheetBorder	RaisedBorder
+
+		FrameBorder
+		{
+			// rounded corners for frames
+			"backgroundtype" "2"
+		}
+		
+		DepressedBorder
 		{
 			"inset" "0 0 1 1"
 			Left
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 1"
 				}
 			}
@@ -676,7 +1134,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "1 0"
 				}
 			}
@@ -685,7 +1143,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
@@ -694,7 +1152,46 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
+					"offset" "0 0"
+				}
+			}
+		}
+		RaisedBorder
+		{
+			"inset" "0 0 1 1"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
@@ -702,121 +1199,17 @@ Scheme
 		
 		TitleButtonBorder
 		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"4"
-				{
-					"color" "BorderBright"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
+			"backgroundtype" "0"
 		}
 
 		TitleButtonDisabledBorder
 		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "BgColor"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "BgColor"
-					"offset" "1 0"
-				}
-			}
-			Top
-			{
-				"1"
-				{
-					"color" "BgColor"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "BgColor"
-					"offset" "0 0"
-				}
-			}
+			"backgroundtype" "0"
 		}
 
 		TitleButtonDepressedBorder
 		{
-			"inset" "1 1 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "0 0"
-				}
-			}
+			"backgroundtype" "0"
 		}
 
 		ScrollBarButtonBorder
@@ -826,7 +1219,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 1"
 				}
 			}
@@ -835,7 +1228,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "1 0"
 				}
 			}
@@ -844,7 +1237,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 0"
 				}
 			}
@@ -853,20 +1246,20 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
 		}
-
-		ButtonBorder
+		
+		ScrollBarButtonDepressedBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "2 2 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Dark"
 					"offset" "0 1"
 				}
 			}
@@ -875,8 +1268,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
-					"offset" "0 0"
+					"color" "Border.Bright"
+					"offset" "1 0"
 				}
 			}
 
@@ -884,8 +1277,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
-					"offset" "0 1"
+					"color" "Border.Dark"
+					"offset" "0 0"
 				}
 			}
 
@@ -893,7 +1286,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Bright"
 					"offset" "0 0"
 				}
 			}
@@ -906,7 +1299,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 1"
 				}
 			}
@@ -915,7 +1308,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "1 0"
 				}
 			}
@@ -924,19 +1317,11 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 0"
 				}
 			}
 
-			Bottom
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "0 0"
-				}
-			}
 		}
 
 		TabActiveBorder
@@ -946,7 +1331,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 0"
 				}
 			}
@@ -955,7 +1340,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "1 0"
 				}
 			}
@@ -964,19 +1349,11 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 0"
 				}
 			}
 
-			Bottom
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "6 2"
-				}
-			}
 		}
 
 
@@ -987,7 +1364,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
@@ -996,7 +1373,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "1 0"
 				}
 			}
@@ -1005,7 +1382,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
@@ -1014,7 +1391,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
@@ -1028,12 +1405,12 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderSelection"
+					"color" "Border.Selection"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 1"
 				}
 			}
@@ -1041,12 +1418,12 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderSelection"
+					"color" "Border.Selection"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "1 0"
 				}
 			}
@@ -1054,12 +1431,12 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderSelection"
+					"color" "Border.Selection"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "1 0"
 				}
 			}
@@ -1067,12 +1444,12 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderSelection"
+					"color" "Border.Selection"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
@@ -1085,7 +1462,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 1"
 				}
 			}
@@ -1094,7 +1471,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "1 0"
 				}
 			}
@@ -1103,7 +1480,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
@@ -1112,7 +1489,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 0"
 				}
 			}
@@ -1193,84 +1570,6 @@ Scheme
 				"1"
 				{
 					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
-		}
-		ASWBriefingButtonBorder
-		{
-			"inset" "1 1 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "LightBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "LightBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "LightBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "LightBlue"
-					"offset" "0 0"
-				}
-			}
-		}
-		ASWBriefingButtonBorderDisabled
-		{
-			"inset" "1 1 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "GreyBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "GreyBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "GreyBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "GreyBlue"
 					"offset" "0 0"
 				}
 			}

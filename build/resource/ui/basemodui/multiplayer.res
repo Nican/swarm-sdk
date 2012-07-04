@@ -261,7 +261,7 @@
 		"usetitlesafe"		"0"
 		"tabPosition"		"0"
 		"navUp"				"BtnBrowseSpraypaint"
-		"navDown"			"DrpAllowFreeLook"
+		"navDown"			"DrpGameInstructor"
 				
 		//button and label
 		"BtnDropButton"
@@ -303,10 +303,10 @@
 		"OnlyActiveUser"		"1"
 	}
 	
-	"DrpAllowFreeLook"
+	"DrpGameInstructor"
 	{
 		"ControlName"		"DropDownMenu"
-		"fieldName"			"DrpAllowFreeLook"
+		"fieldName"			"DrpGameInstructor"
 		"xpos"				"c-180"
 		"ypos"				"280"
 		"zpos"				"3"
@@ -317,6 +317,62 @@
 		"usetitlesafe"		"0"
 		"tabPosition"		"0"
 		"navUp"				"DrpColorBlind"
+		"navDown"			"DrpAllowFreeLook"
+				
+		//button and label
+		"BtnDropButton"
+		{
+			"ControlName"				"BaseModHybridButton"
+			"fieldName"					"BtnDropButton"
+			"xpos"						"0"
+			"ypos"						"0"
+			"zpos"						"0"
+			"wide"						"360"
+			"wideatopen"				"260"	[$WIN32 && !$WIN32WIDE]
+			"tall"						"15"
+			"autoResize"				"1"
+			"pinCorner"					"0"
+			"visible"					"1"
+			"enabled"					"1"
+			"tabPosition"				"1"
+			"AllCaps"					"1"
+			"labelText"					"#L4D360UI_Multiplayer_Instructor_Enabled"
+			"tooltiptext"				"#L4D_import_game_instruct"
+			"style"						"DropDownButton"
+			"command"					"FlmGameInstructor"
+			"ActivationType"			"1"
+			"OnlyActiveUser"			"1"
+		}
+	}
+	
+	//flyouts		
+	"FlmGameInstructor"
+	{
+		"ControlName"			"FlyoutMenu"
+		"fieldName"				"FlmGameInstructor"
+		"visible"				"0"
+		"wide"					"0"
+		"tall"					"0"
+		"zpos"					"4"
+		"InitialFocus"			"BtnOn"
+		"ResourceFile"			"resource/UI/basemodui/DropDownGameInstructor.res"
+		"OnlyActiveUser"		"1"
+	}
+	
+	"DrpAllowFreeLook"
+	{
+		"ControlName"		"DropDownMenu"
+		"fieldName"			"DrpAllowFreeLook"
+		"xpos"				"c-180"
+		"ypos"				"300"
+		"zpos"				"3"
+		"wide"				"360"
+		"tall"				"15"
+		"visible"			"1"
+		"enabled"			"1"
+		"usetitlesafe"		"0"
+		"tabPosition"		"0"
+		"navUp"				"DrpGameInstructor"
 		"navDown"			"DrpGore"
 				
 		//button and label
@@ -364,7 +420,7 @@
 		"ControlName"		"DropDownMenu"
 		"fieldName"			"DrpGore"
 		"xpos"				"c-180"
-		"ypos"				"300"
+		"ypos"				"320"
 		"zpos"				"1"
 		"wide"				"360"
 		"tall"				"15"
@@ -419,7 +475,7 @@
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnCancel"
 		"xpos"					"c-180"
-		"ypos"					"320"
+		"ypos"					"340"
 		"zpos"					"0"
 		"wide"					"200"
 		"tall"					"15"

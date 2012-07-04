@@ -17,15 +17,15 @@ Scheme
 	{
 		// base colors
 		"White"				"255 255 255 255"
-		"OffWhite"			"216 216 216 255"
-		"DullWhite"			"142 142 142 255"
-		"Orange"			"255 155 0 255"
-		"TransparentBlack"	"0 0 0 128"
+		"OffWhite"				"216 216 216 255"
+		"DullWhite"				"142 142 142 255"
+		"Orange"				"255 155 0 255"
+		"TransparentBlack"		"0 0 0 128"
 		"Black"				"0 0 0 255"
 
 		"Blank"				"0 0 0 0"
 		
-		"SteamLightGreen"	"157 194 80 255"
+		"SteamLightGreen"			"157 194 80 255"
 		"AchievementsLightGrey"		"79 79 79 255"
 		"AchievementsDarkGrey"		"55 55 55 255"
 		"AchievementsInactiveFG"	"130 130 130 255"
@@ -40,34 +40,34 @@ Scheme
 		// vgui_controls color specifications
 		Border.Bright					"200 200 200 196"	// the lit side of a control
 		Border.Dark						"40 40 40 196"		// the dark/unlit side of a control
-		Border.Selection				"0 0 0 196"			// the additional border color for displaying the default/selected button
+		Border.Selection					"0 0 0 196"			// the additional border color for displaying the default/selected button
 
-		Button.TextColor				"White"
+		Button.TextColor					"White"
 		Button.BgColor					"Blank"
-		Button.ArmedTextColor			"White"
+		Button.ArmedTextColor				"White"
 		Button.ArmedBgColor				"Blank"				[$WIN32]
 		Button.ArmedBgColor				"190 115 0 255"		[$X360]
-		Button.DepressedTextColor		"White"
-		Button.DepressedBgColor			"Blank"
-		Button.FocusBorderColor			"Black"
+		Button.DepressedTextColor			"White"
+		Button.DepressedBgColor				"Blank"
+		Button.FocusBorderColor				"Black"
 
-		CheckButton.TextColor			"White"
-		CheckButton.SelectedTextColor		"White"
-		CheckButton.BgColor			"TransparentBlack"
-		CheckButton.Border1  			"Border.Dark" 		// the left checkbutton border
-		CheckButton.Border2  			"Border.Bright"		// the right checkbutton border
-		CheckButton.Check			"White"	// color of the check itself
-		CheckButton.HighlightFgColor		"OffWhite"
-		CheckButton.ArmedBgColor		"Blank"
-		CheckButton.DepressedBgColor		"Blank"
-		CheckButton.DisabledBgColor	   	"TransparentBlack"
+		CheckButton.TextColor				"White"
+		CheckButton.SelectedTextColor			"White"
+		CheckButton.BgColor				"TransparentBlack"
+		CheckButton.Border1  				"Border.Dark" 		// the left checkbutton border
+		CheckButton.Border2  				"Border.Bright"		// the right checkbutton border
+		CheckButton.Check					"White"	// color of the check itself
+		CheckButton.HighlightFgColor			"OffWhite"
+		CheckButton.ArmedBgColor			"Blank"
+		CheckButton.DepressedBgColor			"Blank"
+		CheckButton.DisabledBgColor	   		"TransparentBlack"
 				
-		ComboBoxButton.ArrowColor		"DullWhite"
-		ComboBoxButton.ArmedArrowColor	"White"
-		ComboBoxButton.BgColor			"Blank"
-		ComboBoxButton.DisabledBgColor	"Blank"
+		ComboBoxButton.ArrowColor			"DullWhite"
+		ComboBoxButton.ArmedArrowColor		"White"
+		ComboBoxButton.BgColor				"Blank"
+		ComboBoxButton.DisabledBgColor		"Blank"
 
-		Frame.TitleTextInsetX			16
+		Frame.TitleTextInsetX				16
 		Frame.ClientInsetX				8
 		Frame.ClientInsetY				6
 		Frame.BgColor					"160 160 160 128"	[$WIN32]
@@ -215,6 +215,78 @@ Scheme
 
 		"QuickListBGDeselected"		"AchievementsDarkGrey"
 	 	"QuickListBGSelected"           "AchievementsLightGrey"
+	 	
+	//////////////////////// HYBRID BUTTON STYLES /////////////////////////////
+	//
+	// Custom styles for use with L4D360HybridButtons
+
+		HybridButton.BorderColor					"GreyBlue"
+		HybridButton.BlotchColor					"DarkBlueTrans"
+
+		// These bypass all of CA's horrific style.  Look/Feel is code based
+			
+		// main or ingame menu only
+		MainMenuButton.Style						"1"
+		MainMenuButton.TextInsetY					"0"		[$WIN32]
+		MainMenuButton.TextInsetY					"1"		[$X360HIDEF]
+		MainMenuButton.TextInsetY					"0"		[$X360LODEF]
+		
+		// inside of a flyout menu only
+		FlyoutMenuButton.Style						"2"
+		FlyoutMenuButton.TextInsetX					"8"
+		FlyoutMenuButton.TextInsetY					"2"		[$WIN32]
+		FlyoutMenuButton.TextInsetY					"5"		[$X360]
+
+		// inside a dialog, contains a RHS value, usually causes a flyout
+		DropDownButton.Style						"3"
+		DropDownButton.TextInsetY					"0"		[$WIN32HIDEF]
+		DropDownButton.TextInsetY					"-1"	[$WIN32LODEF]
+		DropDownButton.TextInsetY					"2"		[$X360HIDEF]
+		DropDownButton.TextInsetY					"1"		[$X360LODEF]
+
+		// centers within the focus
+		DialogButton.Style							"4"
+		DialogButton.TextInsetY						"0"		[$WIN32HIDEF]
+		DialogButton.TextInsetY						"-1"	[$WIN32LODEF]
+		DialogButton.TextInsetY						"2"		[$X360HIDEF]
+		DialogButton.TextInsetY						"1"		[$X360LODEF]
+		
+		// left aligned within the focus
+		DefaultButton.Style							"0"
+		DefaultButton.TextInsetY					"0"		[$WIN32HIDEF]
+		DefaultButton.TextInsetY					"-1"	[$WIN32LODEF]
+		DefaultButton.TextInsetY					"2"		[$X360HIDEF]
+		DefaultButton.TextInsetY					"1"		[$X360LODEF]
+		
+		// left aligned within the focus
+		RedButton.Style								"5"
+		RedButton.TextInsetY						"0"		[$WIN32HIDEF]
+		RedButton.TextInsetY						"-1"	[$WIN32LODEF]
+
+		// left aligned within the focus
+		RedMainButton.Style							"6"
+		RedMainButton.TextInsetY					"0"		[$WIN32HIDEF]
+		RedMainButton.TextInsetY					"-1"	[$WIN32LODEF]
+		
+		// left aligned within the focus
+		SmallButton.Style							"7"
+		SmallButton.TextInsetY						"1"
+		
+		// specialized button, only appears in game mode carousel
+		GameModeButton.Style						"9"
+		GameModeButton.TextInsetY					"0"		[$WIN32]
+		GameModeButton.TextInsetY					"1"		[$X360HIDEF]
+		GameModeButton.TextInsetY					"0"		[$X360LODEF]
+		
+		// main or ingame menu only
+		MainMenuSmallButton.Style					"10"
+		
+		// who invented this crazy style system anyway?
+		AlienSwarmMenuButton.Style					"11"
+		AlienSwarmMenuButtonSmall.Style					"12"
+		AlienSwarmDefault.Style									"13"
+
+		MediumButton.Style						"8"
 	}
 
 	//////////////////////// BITMAP FONT FILES /////////////////////////////
@@ -256,6 +328,18 @@ Scheme
 				"antialias" "1"
 			}
 		}
+		
+		"DefaultSystemUI" [$WIN32]
+		{
+			"1"
+			{
+				"name"		"Verdana" //"Neo Sans"
+				"tall"		"14"
+				"weight"	"100"
+				"antialias"	"1"
+			}
+		}
+
 		"DefaultFixedOutline"
 		{
 			"1"
@@ -277,6 +361,30 @@ Scheme
 				"weight"	"500"
 			}
 		}
+		"DefaultBlur"
+		{
+			"1"
+			{
+				"name"		"Neo Sans"
+				"tall"		"10"
+				"weight"	"100"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"antialias"	"1"
+				"blur"		"2"
+			}
+		}
+		"DefaultShadowed"
+		{
+			"1"
+			{
+				"name"		"Neo Sans"
+				"tall"		"10"
+				"weight"	"100"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"antialias"	"1"
+				"dropshadow"	"2"
+			}
+		}
 		"DefaultBold"
 		{
 			"1"
@@ -284,6 +392,40 @@ Scheme
 				"name"		"Tahoma"
 				"tall"		"16"
 				"weight"	"1000"
+			}
+		}
+		"Countdown"
+		{
+			"1"
+			{
+				"name"		"Verdana"	
+				"tall"		"20"
+				"weight"	"900"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"antialias"	"1"
+			}
+		}
+		"CountdownBlur"
+		{
+			"1"
+			{
+				"name"		"Verdana"	
+				"tall"		"18"
+				"weight"	"900"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"scanlines"	"1"
+				"blur"	"2"
+			}
+		}
+		"DefaultBoldBlur"
+		{
+			"1"
+			{
+				"name"		"Neo Sans"
+				"tall"		"16"
+				"weight"	"100"
+				"antialias"	"1"
+				"blur"			"3"
 			}
 		}
 		"DefaultUnderline"
@@ -315,6 +457,40 @@ Scheme
 				"dropshadow" "1"
 			}
 		}
+		"DefaultSmallBlur"
+		{
+			"1"
+			{
+				"name"		"Verdana" //"Neo Sans"
+				"tall"		"8"
+				"weight"	"100"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"antialias"	"1"
+				"blur"      "5"
+			}
+		}
+		"DefaultMedium"
+		{
+			"1"
+			{
+				"name"		"Neo Sans"
+				"tall"		"12"
+				"weight"	"100"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"antialias"	"1"
+			}
+		}
+		"DefaultMediumBlur"
+		{
+			"1"
+			{
+				"name"		"Neo Sans"
+				"tall"		"12"
+				"weight"	"100"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"blur"	"1"
+			}
+		}
 		"DefaultVerySmall"
 		{
 			"1"
@@ -324,7 +500,19 @@ Scheme
 				"weight"	"0"
 			}
 		}
-
+		"DefaultVerySmallBlur"
+		{
+			"1"
+			{
+				"name"		"Verdana" //"Neo Sans"
+				"tall"		"7"
+				"weight"	"100"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				//"antialias"	"1"
+				"blur"      "5"
+			}
+		}
+		// DefaultLarge is used for headers
 		"DefaultLarge"
 		{
 			"1"
@@ -348,29 +536,6 @@ Scheme
 				"tall"		"24"
 				"weight"	"2000"
 				"outline"	"1"
-			}
-		}
-		"ChapterTitle"	[$X360]
-		{
-			"1"
-			{
-				"name"			"Tahoma"
-				"tall"			"20"
-				"tall_hidef"	"28"
-				"weight"		"2000"
-				"outline"		"1"
-			}
-		}
-		"ChapterTitleBlur"	[$X360]
-		{
-			"1"
-			{
-				"name"			"Tahoma"
-				"tall"			"20"
-				"tall_hidef"	"28"
-				"weight"		"2000"
-				"blur"			"3"
-				"blur_hidef"	"5"
 			}
 		}
 		"MenuLarge"
@@ -439,6 +604,71 @@ Scheme
 			}
 		}
 		
+		// DefaultExtraLarge
+		"DefaultExtraLarge"
+		{
+			"1"
+			{
+				"name"		"Neo Sans"
+				"tall"		"20"
+				"weight"	"100"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"antialias"	"1"
+			}
+		}
+		
+		// L4D MATCHMAKING FONTS
+		//===================================
+		
+		"FrameTitle"
+		{
+			"1"
+			{
+				"name"			"Neo Sans"
+				"tall"			"24"
+				"weight"		"400"
+				"antialias"		"1"
+			}
+		}
+
+		"FrameTitleBlur"
+		{
+			"1"
+			{
+				"name"			"Neo Sans"
+				"tall"			"24"
+				"weight"		"400"
+				"blur"			"3"					[$WIN32 || $X360LODEF]
+				"blur"			"5"					[$X360HIDEF]
+				"antialias"		"1"
+			}
+		}
+
+		"MainBold"
+		{
+			"1"
+			{
+				"name"			"Neo Sans"
+				"tall"			"20"
+				"weight"		"400"				[$WIN32]
+				"weight"		"800"				[$X360]
+				"antialias"		"1"
+			}
+		}
+
+		"MainBoldBlur"
+		{
+			"1"
+			{
+				"name"			"Neo Sans"
+				"tall"			"20"
+				"weight"		"400"				[$WIN32]
+				"weight"		"800"				[$X360]
+				"blur"			"3"
+				"antialias"		"1"
+			}
+		}
+
 		GameUIButtons
 		{
 			"1"	[$X360]
@@ -453,6 +683,43 @@ Scheme
 				"scaley_lodef"	"0.75"
 			}
 		}
+
+		GameUIButtonsMini
+		{
+			"1"
+			{
+				"bitmap"	"1"
+				"name"		"Buttons"
+				"scalex"	"0.65"
+				"scaley"	"0.65"
+			}
+		}
+		
+		GameUIButtonsTiny
+		{
+			"1"
+			{
+				"bitmap"	"1"
+				"name"		"Buttons"
+				"scalex"	"0.5"
+				"scaley"	"0.5"
+			}
+		}
+
+		//
+		// ScreenTitle is the super large font ONLY used as THE major screen title heading.
+		//
+		"ScreenTitle"
+		{
+			"1"
+			{
+				"name"		"Neo Sans"
+				"tall"		"28"
+				"weight"	"400"
+				"antialias"	"1"
+			}
+		}
+
 		"ConsoleText"
 		{
 			"1"
@@ -1203,5 +1470,6 @@ Scheme
 	// specifies all the custom (non-system) font files that need to be loaded to service the above described fonts
 	CustomFontFiles
 	{
+		"1"		"resource/NeoSans.vfont"
 	}
 }
