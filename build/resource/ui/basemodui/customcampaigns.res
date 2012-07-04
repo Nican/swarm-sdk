@@ -1,6 +1,6 @@
-"Resource/UI/basemodui/CustomCampaigns.res"
+"Resource/UI/CustomCampaigns.res"
 {
-	"CustomCampaigns" //#L4D360UI_CustomCampaigns_FriendsTitle #L4D360UI_CustomCampaigns_SystemLinkTitle
+	"CustomCampaigns" //#BaseModUI_CustomCampaigns_FriendsTitle #BaseModUI_CustomCampaigns_SystemLinkTitle
 	{
 		"ControlName"					"Frame"
 		"fieldName"						"CustomCampaigns"
@@ -83,7 +83,7 @@
 		"visible"			"0" 
 		"enabled"			"1"
 		"tabPosition"		"0"
-		"labelText"						"#L4D360UI_No_CustomCampaigns_Installed"
+		"labelText"						"#BaseModUI_No_CustomCampaigns_Installed"
 		"textAlignment"					"west"
 		"Font"							"DefaultBold"
 	}
@@ -199,8 +199,8 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"wrap"					"1"
-		"labelText"				"#L4D360UI_CustomCampaign_Select"
-		"tooltiptext"			"#L4D360UI_CustomCampaign_Select_Tooltip"
+		"labelText"				"#BaseModUI_CustomCampaign_Select"
+		"tooltiptext"			"#BaseModUI_CustomCampaign_Select_Tooltip"
 		"style"					"MainMenuSmallButton"
 		"command"				"Select"
 		EnabledTextInsetX		"2"
@@ -243,8 +243,8 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"wrap"					"1"
-		"labelText"				"#L4D360UI_Cancel_Caps"
-		"tooltiptext"			"#L4D360UI_Tooltip_Cancel"
+		"labelText"				"#BaseModUI_Cancel_Caps"
+		"tooltiptext"			"#BaseModUI_Tooltip_Cancel"
 		"style"					"MainMenuSmallButton"
 		"command"				"Back"
 		EnabledTextInsetX		"2"

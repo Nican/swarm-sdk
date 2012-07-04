@@ -11,6 +11,7 @@
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"usetitlesafe"		"1"
+		"zpos"					"3"
 	}
 
 	"LblName"

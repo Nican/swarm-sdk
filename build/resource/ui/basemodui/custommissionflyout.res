@@ -16,8 +16,8 @@
 		"wrap"					"1"
 		"navUp"					"BtnPlaySolo"
 		"navDown"				"BtnPlayCoopWithAnyone"
-		"labelText"				"#L4D360UI_MainMenu_PlayCoopWithFriends"
-		"tooltiptext"			"#L4D360UI_MainMenu_PlayCoopWithFriends_Tip"
+		"labelText"				"#BaseModUI_MainMenu_PlayCoopWithFriends"
+		"tooltiptext"			"#BaseModUI_MainMenu_PlayCoopWithFriends_Tip"
 		"style"					"FlyoutMenuButton"
 		"command"				"PlayCoopWithFriends"
 		"proportionalToParent"	"1"
@@ -41,8 +41,8 @@
 		"wrap"					"1"
 		"navUp"					"BtnPlayCoopWithFriends"
 		"navDown"				"BtnPlaySystemLink"
-		"labelText"				"#L4D360UI_MainMenu_PlayCoopWithAnyone"
-		"tooltiptext"			"#L4D360UI_MainMenu_PlayCoopWithAnyone_Tip"
+		"labelText"				"#BaseModUI_MainMenu_PlayCoopWithAnyone"
+		"tooltiptext"			"#BaseModUI_MainMenu_PlayCoopWithAnyone_Tip"
 		"style"					"FlyoutMenuButton"
 		"command"				"PlayCoopWithAnyone"
 		"proportionalToParent"	"1"
@@ -66,10 +66,10 @@
 		"wrap"					"1"
 		"navUp"					"BtnPlayCoopWithAnyone"
 		"navDown"				"BtnPlaySolo"
-		"labelText"				"#L4D360UI_MainMenu_PlayCoopWithSystemLink" [$X360]
-		"labelText"				"#L4D360UI_MainMenu_PlayCoopLAN" [$WIN32]
-		"tooltiptext"			"#L4D360UI_MainMenu_PlayCoopWithSystemLink_Tip" [$X360]
-		"tooltiptext"			"#L4D360UI_MainMenu_PlayCoopLAN_Tip" [$WIN32]
+		"labelText"				"#BaseModUI_MainMenu_PlayCoopWithSystemLink" [$X360]
+		"labelText"				"#BaseModUI_MainMenu_PlayCoopLAN" [$WIN32]
+		"tooltiptext"			"#BaseModUI_MainMenu_PlayCoopWithSystemLink_Tip" [$X360]
+		"tooltiptext"			"#BaseModUI_MainMenu_PlayCoopLAN_Tip" [$WIN32]
 		"style"					"FlyoutMenuButton"
 		"command"				"PlaySysLink"
 		"proportionalToParent"	"1"
@@ -92,8 +92,8 @@
 		"wrap"					"1"
 		"navUp"					"BtnPlaySystemLink"
 		"navDown"				"BtnPlayCoopWithFriends"
-		"labelText"				"#L4D360UI_MainMenu_PlaySolo"
-		"tooltiptext"			"#L4D360UI_MainMenu_PlaySolo_Tip"
+		"labelText"				"#BaseModUI_MainMenu_PlaySolo"
+		"tooltiptext"			"#BaseModUI_MainMenu_PlaySolo_Tip"
 		"style"					"FlyoutMenuButton"
 		"command"				"SoloPlay"
 		"proportionalToParent"	"1"

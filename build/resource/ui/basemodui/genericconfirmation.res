@@ -1,19 +1,5 @@
 "Resource/UI/GenericConfirmation.res"
 {
-	"LblTitle"
-	{
-		"ControlName"		"Label"
-		"fieldName"			"LblTitle"
-		"fgcolor_override"		"169 213 255 255"
-	}
-	
-	"LblMessage"
-	{
-		"ControlName"		"Label"
-		"fieldName"			"LblMessage"
-		"fgcolor_override"		"83 148 192 255"
-	}
-	
 	"GenericConfirmation"
 	{
 		"ControlName"		"Frame"
@@ -87,18 +73,19 @@
 
 	"BtnOK"
 	{
-		"ControlName"			"CNB_Button"
+		"ControlName"			"Button"
 		"fieldName"				"BtnOK"
-		"xpos"					"135"
-		"ypos"					"80"
-		"wide"		"117"
-		"tall"		"27"
+		"xpos"					"0"
+		"ypos"					"0"
+		"wide"					"45"
+		"tall"					"16"
 		"autoResize"			"0"
+		"pinCorner"				"0"
 		"visible"				"0" [$X360]
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"AllCaps"				"1"
-		"labelText"				"#GameUI_OK"
+		"labelText"				"#L4D360UI_Ok"
 		"textAlignment"			"center"
 		"command"				"OK"
 		"font"					"DefaultBold"
@@ -106,18 +93,19 @@
 
 	"BtnCancel"
 	{
-		"ControlName"			"CNB_Button"
+		"ControlName"			"Button"
 		"fieldName"				"BtnCancel"
-		"xpos"					"195"
-		"ypos"					"80"
-		"wide"		"117"
-		"tall"		"27"
+		"xpos"					"0"
+		"ypos"					"0"
+		"wide"					"45"
+		"tall"					"16"
 		"autoResize"			"0"
+		"pinCorner"				"0"
 		"visible"				"0" [$X360]
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"AllCaps"				"1"
-		"labelText"				"#GameUI_Cancel"
+		"labelText"				"#L4D360UI_Cancel_Caps"
 		"textAlignment"			"center"
 		"command"				"cancel"
 		"font"					"DefaultBold"
