@@ -19,9 +19,25 @@ Scheme
 		"White"				"255 255 255 255"
 		"OffWhite"				"216 216 216 255"
 		"DullWhite"				"142 142 142 255"
+		"Gray"				"64 64 64 255"
+		"MediumGray"      		"145 145 145 255"
+		"DarkGrey"				"128 128 128 255"
+		"AshGray"				"16 16 16 255"
+		"AshGrayHighAlpha"		"16 16 16 192"
+		"DarkGrayLowAlpha"		"32 32 32 64"
+		"DarkRed"				"65 0 0 255"
+		"DeepRed"				"168 26 26 255"
 		"Orange"				"255 155 0 255"
+		"Red"					"255 0 0 255"
 		"TransparentBlack"		"0 0 0 128"
 		"Black"				"0 0 0 255"
+
+		// Alien Swarm
+		"LightBlue"				"66 142 192 255"
+		"GreyBlue"				"65 74 96 255"
+		"DarkBlueTrans"			"65 74 96 64"
+		"Blue"				"83 148 192 255"
+		"HighlightBlue"			"169 213 255 255"
 
 		"Blank"				"0 0 0 0"
 		
@@ -389,9 +405,21 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Neo Sans"
 				"tall"		"16"
-				"weight"	"1000"
+				"weight"	"100"
+				"antialias"	"1"
+			}
+		}
+		"DefaultBoldBlur"
+		{
+			"1"
+			{
+				"name"		"Neo Sans"
+				"tall"		"16"
+				"weight"	"100"
+				"antialias"	"1"
+				"blur"			"3"
 			}
 		}
 		"Countdown"
@@ -415,17 +443,6 @@ Scheme
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"scanlines"	"1"
 				"blur"	"2"
-			}
-		}
-		"DefaultBoldBlur"
-		{
-			"1"
-			{
-				"name"		"Neo Sans"
-				"tall"		"16"
-				"weight"	"100"
-				"antialias"	"1"
-				"blur"			"3"
 			}
 		}
 		"DefaultUnderline"
