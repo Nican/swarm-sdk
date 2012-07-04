@@ -470,7 +470,7 @@ void MainMenu::OnCommand( const char *command )
 
 			GenericConfirmation::Data_t data;
 
-			data.pWindowTitle = "#L4D360UI_MainMenu_Quit_Confirm";
+			data.pWindowTitle = "#SDK_UI_Game_Title";
 			data.pMessageText = "#L4D360UI_MainMenu_Quit_ConfirmMsg";
 
 			data.bOkButtonEnabled = true;

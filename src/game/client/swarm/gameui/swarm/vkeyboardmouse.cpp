@@ -14,6 +14,7 @@
 #include "vgui/ISurface.h"
 #include "VGenericConfirmation.h"
 #include "materialsystem/materialsystem_config.h"
+#include "nb_header_footer.h"
 
 #ifdef _X360
 #include "xbox/xbox_launch.h"
@@ -52,6 +53,13 @@ BaseClass(parent, panelName)
 	m_sldGamepadVSensitivity = NULL;
 	m_drpGamepadYInvert = NULL;
 	m_drpGamepadSwapSticks = NULL;
+
+	m_pHeaderFooter = new CNB_Header_Footer( this, "HeaderFooter" );
+	m_pHeaderFooter->SetTitle( "" );
+	m_pHeaderFooter->SetHeaderEnabled( false );
+	m_pHeaderFooter->SetFooterEnabled( true );
+	m_pHeaderFooter->SetGradientBarEnabled( true );
+	m_pHeaderFooter->SetGradientBarPos( 120, 160 );
 
 	m_btnCancel = NULL;
 }

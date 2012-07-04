@@ -1248,12 +1248,12 @@ void FoundGames::UpdateTitle()
 	if ( const char *gameMode = m_pDataSettings->GetString( "game/mode", NULL ) )
 	{
 		gameMode = NoTeamGameMode( gameMode );
-		m_pTitle->SetText( CFmtStr( "#L4D360UI_FoundFriendGames_Title_%s", gameMode ) );
+	//	m_pTitle->SetText( CFmtStr( "#L4D360UI_FoundFriendGames_Title_%s", gameMode ) );
 		BaseClass::DrawDialogBackground( CFmtStr( "#L4D360UI_FoundFriendGames_Title_%s", gameMode ), NULL, "#L4D360UI_FoundGames_Description", NULL, NULL );
 	}
 	else
 	{
-		m_pTitle->SetText( CFmtStr( "#L4D360UI_FoundGames_AllGames" ) );
+	//	m_pTitle->SetText( CFmtStr( "#L4D360UI_FoundGames_AllGames" ) );
 		BaseClass::DrawDialogBackground( "#L4D360UI_FoundGames_AllGames", NULL, "#L4D360UI_FoundGames_Description", NULL, NULL );
 	}
 }

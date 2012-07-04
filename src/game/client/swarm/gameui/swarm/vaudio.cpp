@@ -58,13 +58,6 @@ BaseClass(parent, panelName)
 	m_pVoiceTweak = NULL;
 #endif
 
-	m_pHeaderFooter = new CNB_Header_Footer( this, "HeaderFooter" );
-	m_pHeaderFooter->SetTitle( "" );
-	m_pHeaderFooter->SetHeaderEnabled( false );
-	m_pHeaderFooter->SetFooterEnabled( true );
-	m_pHeaderFooter->SetGradientBarEnabled( true );
-	m_pHeaderFooter->SetGradientBarPos( 60, 340 );
-
 	SetDeleteSelfOnClose(true);
 
 	SetProportional( true );
@@ -90,14 +83,21 @@ BaseClass(parent, panelName)
 	m_pMicMeter2 = NULL;
 	m_pMicMeterIndicator = NULL;
 
-	m_btnCancel = NULL;
-
 	m_btn3rdPartyCredits = NULL;
 
 	m_nSelectedAudioLanguage = k_Lang_None;
 	m_nCurrentAudioLanguage = k_Lang_None;
 
 	m_nNumAudioLanguages = 0;
+
+	m_pHeaderFooter = new CNB_Header_Footer( this, "HeaderFooter" );
+	m_pHeaderFooter->SetTitle( "" );
+	m_pHeaderFooter->SetHeaderEnabled( false );
+	m_pHeaderFooter->SetFooterEnabled( true );
+	m_pHeaderFooter->SetGradientBarEnabled( true );
+	m_pHeaderFooter->SetGradientBarPos( 60, 340 );
+
+	m_btnCancel = NULL;
 }
 
 //=============================================================================

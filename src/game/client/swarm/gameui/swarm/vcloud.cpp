@@ -37,14 +37,14 @@ BaseClass(parent, panelName)
 	SetUpperGarnishEnabled(true);
 	SetLowerGarnishEnabled(true);
 
+	m_drpCloud = NULL;
+
 	m_pHeaderFooter = new CNB_Header_Footer( this, "HeaderFooter" );
 	m_pHeaderFooter->SetTitle( "" );
 	m_pHeaderFooter->SetHeaderEnabled( false );
 	m_pHeaderFooter->SetFooterEnabled( true );
 	m_pHeaderFooter->SetGradientBarEnabled( true );
 	m_pHeaderFooter->SetGradientBarPos( 120, 160 );
-
-	m_drpCloud = NULL;
 
 	m_btnCancel = NULL;
 }
