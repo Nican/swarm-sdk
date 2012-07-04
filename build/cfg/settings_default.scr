@@ -83,13 +83,6 @@ DESCRIPTION SERVER_OPTIONS
 		{ "0" }
 	}
 
-	"mp_roundtime"
-	{
-		"#SDK_RoundTime"
-		{ NUMBER 0 15 }
-		{ "5" }
-	}
-
 	"mp_footsteps"
 	{
 		"#Valve_Footsteps"
