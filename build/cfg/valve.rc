@@ -1,6 +1,5 @@
 // load the base configuration
 //exec default.cfg
-r_decal_cullsize 1
 
 // Setup custom controller
 exec joystick.cfg
@@ -12,9 +11,3 @@ exec autoexec.cfg
 // stuff command line statements
 //
 stuffcmds
-
-// Tony; don't do map_background in multiplayer.
-//startupmenu
-
-sv_unlockedchapters 99
-
