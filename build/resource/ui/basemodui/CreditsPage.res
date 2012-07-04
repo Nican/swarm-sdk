@@ -36,7 +36,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"SDK_UI_Game_Title"
-		"xpos"				"c100"
+		"xpos"				"c200"
 		"ypos"				"115" 
 		"wide"				"200"
 		"tall"				"20"
@@ -54,7 +54,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Kosire"
-		"xpos"				"c100"
+		"xpos"				"c200"
 		"ypos"				"140" 
 		"wide"				"100"
 		"tall"				"10"
@@ -72,7 +72,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Tony Sergi"
-		"xpos"				"c100"
+		"xpos"				"c200"
 		"ypos"				"155" 
 		"wide"				"100"
 		"tall"				"10"
@@ -90,7 +90,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"c_b_fofep"
-		"xpos"				"c100"
+		"xpos"				"c200"
 		"ypos"				"170" 
 		"wide"				"100"
 		"tall"				"10"
@@ -108,7 +108,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Doplhur"
-		"xpos"				"c0"
+		"xpos"				"c200"
 		"ypos"				"185" 
 		"wide"				"100"
 		"tall"				"10"
@@ -126,7 +126,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Valve"
-		"xpos"				"c100"
+		"xpos"				"c200"
 		"ypos"				"200" 
 		"wide"				"100"
 		"tall"				"10"
