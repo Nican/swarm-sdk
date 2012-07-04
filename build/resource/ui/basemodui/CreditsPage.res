@@ -139,7 +139,24 @@
 		"labelText"				"Valve"
 		"font"				"DefaultMedium"
 	}
-	
+
+	"IconBackArrow" [$WIN32]
+	{
+		"ControlName"			"ImagePanel"
+		"fieldName"				"IconBackArrow"
+		"xpos"					"c-195"
+		"ypos"					"420"
+		"wide"					"15"
+		"tall"					"15"
+		"scaleImage"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"image"					"icon_button_arrow_left"
+		"scaleImage"			"1"
+	}
+
 	"BtnCancel" [$WIN32]
 	{
 		"ControlName"			"BaseModHybridButton"

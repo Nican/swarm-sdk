@@ -187,7 +187,7 @@
 		"tabPosition"		"0"
 		"proportionalToParent"	"1"
 	}
-    "IconBackArrow" [$WIN32]
+	"IconBackArrow" [$WIN32]
 	{
 		"ControlName"			"ImagePanel"
 		"fieldName"				"IconBackArrow"
@@ -197,7 +197,7 @@
 		"tall"					"15"
 		"scaleImage"			"1"
 		"pinCorner"				"0"
-		"visible"				"0"
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"image"					"icon_button_arrow_left"

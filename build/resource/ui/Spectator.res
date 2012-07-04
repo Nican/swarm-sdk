@@ -57,7 +57,7 @@
 	"BlueScoreLabel"
 	{
 		"ControlName"	"Label"
-		"fieldName"		"CTScoreLabel"
+		"fieldName"		"BlueScoreValue"
 		"xpos"			"r268"
 		"ypos"			"12"
 		"wide"			"150"
@@ -74,7 +74,7 @@
 	"BlueScoreValue"
 	{
 		"ControlName"	"Label"
-		"fieldName"		"CTScoreValue"
+		"fieldName"		"BlueScoreValue"
 		"xpos"			"r112"
 		"ypos"			"12"
 		"wide"			"15"
@@ -91,7 +91,7 @@
 	"RedScoreLabel"
 	{
 		"ControlName"	"Label"
-		"fieldName"		"TERScoreLabel"
+		"fieldName"		"RedScoreLabel"
 		"xpos"			"r268"
 		"ypos"			"24"
 		"wide"			"150"
@@ -108,7 +108,7 @@
 	"RedScoreValue"
 	{
 		"ControlName"	"Label"
-		"fieldName"		"TERScoreValue"
+		"fieldName"		"RedScoreValue"
 		"xpos"			"r112"
 		"ypos"			"24"
 		"wide"			"15"
