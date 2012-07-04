@@ -6,6 +6,7 @@ particles_manifest
 	"file"		"particles/fire_01.pcf"
 	"file"		"particles/impact_fx.pcf"
 	"file"		"particles/rain_fx.pcf"	
+	"file"		"particles/rocket_fx.pcf"
 	"file"		"particles/tracer_fx.pcf"
 	"file"		"particles/water_impact.pcf"
 	"file"		"particles/weapon_fx_hl2.pcf"

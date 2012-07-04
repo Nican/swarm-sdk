@@ -1,0 +1,5 @@
+spritecard
+{
+$baseTexture "particle\leaf/greenleaf"
+$blendframes 0
+}

@@ -1,0 +1,10 @@
+UnlitGeneric
+{
+$basetexture "particle\voice_icon_particle"
+$translucent 1
+$overbrightfactor 2
+$vertexcolor 1
+$vertexalpha 1
+$no_fullbright 1
+
+}

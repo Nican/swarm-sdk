@@ -1,0 +1,7 @@
+SpriteCard
+{
+
+$basetexture "effects/spark.vtf"
+$additive 1
+$splinetype 2
+}
