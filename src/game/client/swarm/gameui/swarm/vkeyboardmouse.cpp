@@ -349,10 +349,15 @@ void KeyboardMouse::OnKeyCodePressed(KeyCode code)
 //=============================================================================
 void KeyboardMouse::OnCommand(const char *command)
 {
-	if( Q_stricmp( "#L4D360UI_Controller_Edit_Keys_Buttons", command ) == 0 )
+	if( Q_stricmp( "Keyboard", command ) == 0 )
 	{
-		FlyoutMenu::CloseActiveMenu();
-		CBaseModPanel::GetSingleton().OpenKeyBindingsDialog( this );
+		// standalone keyboard/mouse dialog, PC only
+		if ( m_ActiveControl )
+		{
+			m_ActiveControl->NavigateFrom( );
+		}
+		BaseClass::NavigateBack();
+		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARD, this, true );
 	}
 	else if( Q_stricmp( "MouseYInvertEnabled", command ) == 0 )
 	{

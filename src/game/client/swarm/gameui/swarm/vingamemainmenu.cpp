@@ -256,10 +256,11 @@ void InGameMainMenu::OnCommand( const char *command )
 		m_ActiveControl->NavigateFrom( );
 		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARDMOUSE, this, true );
 	}
-	else if( Q_stricmp( "#L4D360UI_Controller_Edit_Keys_Buttons", command ) == 0 )
+	else if( Q_stricmp( "Keyboard", command ) == 0 )
 	{
-		FlyoutMenu::CloseActiveMenu();
-		CBaseModPanel::GetSingleton().OpenKeyBindingsDialog( this );
+		// standalone keyboard/mouse dialog, PC only
+		m_ActiveControl->NavigateFrom( );
+		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARD, this, true );
 	}
 	else if (!Q_strcmp(command, "MultiplayerSettings"))
 	{

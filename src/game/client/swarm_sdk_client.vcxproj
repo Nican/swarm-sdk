@@ -758,6 +758,7 @@ exit 1
     <ClCompile Include="..\shared\test_ehandle.cpp" />
     <ClCompile Include="swarm\c_asw_jukebox.cpp" />
     <ClCompile Include="swarm\c_asw_lesson.cpp" />
+    <ClCompile Include="swarm\gameui\swarm\vkeyboard.cpp" />
     <ClCompile Include="swarm\vgui\asw_vgui_music_importer.cpp" />
     <ClCompile Include="swarm\vgui\nb_button.cpp" />
     <ClCompile Include="swarm\vgui\nb_header_footer.cpp" />
@@ -1596,6 +1597,7 @@ exit 1
     <ClInclude Include="sdk\vgui\vgui_rootpanel_sdk.h" />
     <ClInclude Include="spatialentitymgr.h" />
     <ClInclude Include="swarm\c_asw_jukebox.h" />
+    <ClInclude Include="swarm\gameui\swarm\vkeyboard.h" />
     <ClInclude Include="swarm\vgui\asw_vgui_music_importer.h" />
     <ClInclude Include="swarm\vgui\nb_button.h" />
     <ClInclude Include="swarm\vgui\nb_header_footer.h" />

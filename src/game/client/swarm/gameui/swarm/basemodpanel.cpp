@@ -52,6 +52,7 @@
 #include "VInGameChapterSelect.h"
 #include "VInGameKickPlayerList.h"
 #include "VKeyboardMouse.h"
+#include "vkeyboard.h"
 #include "VVoteOptions.h"
 #include "VLoadingProgress.h"
 #include "VMainMenu.h"
@@ -397,6 +398,16 @@ CBaseModFrame* CBaseModPanel::OpenWindow(const WINDOW_TYPE & wt, CBaseModFrame *
 			break;
 #else
 			m_Frames[wt] = new KeyboardMouse(this, "KeyboardMouse");
+#endif
+			break;
+
+		case WT_KEYBOARD:
+#if defined( _X360 )
+			// not for xbox
+			Assert( 0 );
+			break;
+#else
+			m_Frames[wt] = new VKeyboard(this, "VKeyboard");
 #endif
 			break;
 
