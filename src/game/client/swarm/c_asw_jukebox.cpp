@@ -107,8 +107,8 @@ bool CASWJukeboxPlaylist::Init()
 	// Load the saved playlist
 	LoadPlaylistKV();
 
-	ListenForGameEvent( "jukebox_play_random" );
-	ListenForGameEvent( "jukebox_stop" );
+//	ListenForGameEvent( "jukebox_play_random" );
+//	ListenForGameEvent( "jukebox_stop" );
 
 
 	return true;

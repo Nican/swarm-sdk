@@ -335,7 +335,6 @@ void CBaseSDKGrenade::ItemPostFrame()
 		vForward[2] += 0.1f;
 
 		Vector vecThrow = vForward * 1200 + pPlayer->GetAbsVelocity();
-		Msg( "Threw a grenade!\n" );
 		EmitGrenade( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, this );
 
 		m_bRedraw = true;

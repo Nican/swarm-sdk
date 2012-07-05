@@ -76,7 +76,7 @@ CClientScoreBoardDialog::CClientScoreBoardDialog(IViewPort *pViewPort) : Editabl
 	
 	// update scoreboard instantly if on of these events occure
 	ListenForGameEvent( "hltv_status" );
-	ListenForGameEvent( "replay_status" );
+	/*ListenForGameEvent( "replay_status" );*/
 	ListenForGameEvent( "server_spawn" );
 
 	m_pImageList = NULL;

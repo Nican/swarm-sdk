@@ -148,6 +148,7 @@ void CTextWindow::Reset( void )
 		SetAlpha( 255 );
 	}
 
+	m_nContentType = TYPE_TEXT;
 	UpdateContents();
 }
 

@@ -230,7 +230,7 @@ void ClientModeShared::Init()
 	ListenForGameEvent( "player_team" );
 	ListenForGameEvent( "server_cvar" );
 	ListenForGameEvent( "player_changename" );
-	ListenForGameEvent( "player_fullyjoined" );	
+	//ListenForGameEvent( "player_fullyjoined" );	
 	ListenForGameEvent( "teamplay_broadcast_audio" );
 	ListenForGameEvent( "achievement_earned" );
 
