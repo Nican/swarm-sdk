@@ -53,7 +53,7 @@
 		"labelText"				"#L4D360UI_Controller_Edit_Keys_Buttons"
 		"tooltiptext"			"#L4D_edit_keys_tip"
 		"style"					"DefaultButton"
-		"command"				"#L4D360UI_Controller_Edit_Keys_Buttons"
+		"command"				"Keyboard"
 		EnabledTextInsetX		"2"
 		DisabledTextInsetX		"2"
 		FocusTextInsetX			"2"
