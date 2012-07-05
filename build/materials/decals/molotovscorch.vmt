@@ -1,0 +1,10 @@
+LightmappedGeneric
+{
+$decal 1
+$basetexture "particle/MolotovScorch"
+$modelmaterial "decals/MolotovScorchModel"
+$translucent 1
+$vertexcolor 1
+$vertexalpha 1
+$decalFadeDuration "-5"
+}

@@ -57,7 +57,7 @@
 	"BlueScoreLabel"
 	{
 		"ControlName"	"Label"
-		"fieldName"		"BlueScoreValue"
+		"fieldName"		"BlueScoreLabel"
 		"xpos"			"r268"
 		"ypos"			"12"
 		"wide"			"150"
