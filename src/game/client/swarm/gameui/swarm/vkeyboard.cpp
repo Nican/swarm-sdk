@@ -138,11 +138,17 @@ void VKeyboard::OnCommand(const char *command)
 	{
 		m_pOptionsSubKeyboard->OnApplyChanges();
 		OnKeyCodePressed( KEY_XBUTTON_B );
+
+		// Navigate back to KeyboardMouse where the user came from
+		BaseClass::NavigateBack();
 		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARDMOUSE, this, true );
 	}
 	else if( Q_stricmp( "Cancel", command ) == 0 )
 	{
 		OnKeyCodePressed( KEY_XBUTTON_B );
+
+		// Navigate back to KeyboardMouse where the user came from
+		BaseClass::NavigateBack();
 		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARDMOUSE, this, true );
 	}
 	else

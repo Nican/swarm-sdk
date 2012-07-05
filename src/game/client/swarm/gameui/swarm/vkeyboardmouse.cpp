@@ -356,8 +356,9 @@ void KeyboardMouse::OnCommand(const char *command)
 		{
 			m_ActiveControl->NavigateFrom( );
 		}
-		// To do: All GameUI is hidden when exiting??? But this will allow us to move around in keyboard bindings
-		BaseClass::CloseModal();
+
+		// Navigate to Keyboard to change key bindings
+		BaseClass::NavigateBack();
 		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARD, this, true );
 	}
 	else if( Q_stricmp( "MouseYInvertEnabled", command ) == 0 )

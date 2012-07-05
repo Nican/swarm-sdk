@@ -352,6 +352,7 @@ void InGameMainMenu::OnCommand( const char *command )
 			}
 			engine->ClientCmd("gameui_hide");
 			return;
+			
 			/*
 			static ConVarRef mp_gamemode( "mp_gamemode" );
 			if ( mp_gamemode.IsValid() )
