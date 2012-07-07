@@ -141,7 +141,7 @@ void VKeyboard::OnCommand(const char *command)
 
 		// Navigate back to KeyboardMouse where the user came from
 		BaseClass::NavigateBack();
-		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARDMOUSE, this, true );
+		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARD, this, true );
 	}
 	else if( Q_stricmp( "Cancel", command ) == 0 )
 	{

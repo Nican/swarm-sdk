@@ -351,12 +351,6 @@ void KeyboardMouse::OnCommand(const char *command)
 {
 	if( Q_stricmp( "Keyboard", command ) == 0 )
 	{
-		// standalone keyboard/mouse dialog, PC only
-		if ( m_ActiveControl )
-		{
-			m_ActiveControl->NavigateFrom( );
-		}
-
 		// Navigate to Keyboard to change key bindings
 		BaseClass::NavigateBack();
 		CBaseModPanel::GetSingleton().OpenWindow(WT_KEYBOARD, this, true );
