@@ -733,7 +733,6 @@ int CSDKPlayer::OnTakeDamage_Alive( const CTakeDamageInfo &info )
 	return 1;
 }
 
-// Somme - John, found this fix in an older build
 ConVar c_server_ragdoll("c_server_ragdoll", "0", FCVAR_CHEAT, "If set, players will have server ragdolls instead of clientside ones.");
 
 bool CSDKPlayer::BecomeRagdollOnClient( const Vector &force )

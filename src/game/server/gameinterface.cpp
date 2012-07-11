@@ -112,7 +112,7 @@
 #include "asw_gamerules.h"
 #endif
 
-// Somme - Activate SDK gamerules
+// Activate SDK gamerules
 #include "sdk_gamerules.h"
 
 #ifdef _WIN32
@@ -1218,7 +1218,7 @@ void CServerGameDLL::ServerActivate( edict_t *pEdictList, int edictCount, int cl
 	TheNavMesh->Load();
 #endif
 
-	// Somme - Activate SDK gamerules
+	// Activate SDK gamerules
 	SDKGameRules()->ServerActivate();
 
 }
