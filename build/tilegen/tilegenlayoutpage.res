@@ -1,0 +1,45 @@
+"TileGenLayoutPage.res"
+{
+	"TileGenLayoutPage"
+	{
+		"ControlName"		"Panel"
+		"fieldName"		"TileGenLayoutPage"
+		"xpos"		"0"
+		"ypos"		"20"
+		"wide"		"620"
+		"tall"		"546"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+	}
+	"ScrollingWindow"
+	{
+		"ControlName"		"CScrollingWindow"
+		"fieldName"		"ScrollingWindow"
+		"xpos"		"0"
+		"ypos"		"0"
+		"wide"		"620"
+		"tall"		"546"
+		"autoResize"		"3"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+	}
+	"MapLayoutPanel"
+	{
+		"ControlName"		"CMapLayoutPanel"
+		"fieldName"		"MapLayoutPanel"
+		"xpos"		"-2105"
+		"ypos"		"-2132"
+		"wide"		"4800"
+		"tall"		"4800"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+	}
+}
