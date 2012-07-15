@@ -304,6 +304,7 @@ void CTextWindow::OnCommand( const char *command)
 		}
 		
 		m_pViewPort->ShowPanel( this, false );
+		engine->ClientCmd("joingame");
 	}
 
 	BaseClass::OnCommand(command);

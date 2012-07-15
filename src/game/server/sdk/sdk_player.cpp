@@ -1078,7 +1078,7 @@ bool CSDKPlayer::ClientCommand( const CCommand &args )
 #endif
 		return true;
 	}
-	else if ( FStrEq( pcmd, "droptest" ) )
+	else if ( FStrEq( pcmd, "drop" ) )
 	{
 		ThrowActiveWeapon();
 		return true;
