@@ -14,12 +14,12 @@ rem == Note that this path needs does not support long file/directory names ==
 rem == So instead of a path such as "C:\Program Files\Steam\steamapps\mymod" ==
 rem == you need to find the 8.3 abbreviation for the directory name using 'dir /x' ==
 rem == and set the directory to something like C:\PROGRA~2\Steam\steamapps\sourcemods\mymod ==
-set GAMEDIR=
+set GAMEDIR=C:\PROGRA~2\Steam\steamapps\sourcemods\swarmsdktemplate
 
 rem == Set the relative path to steamapps\common\Alien Swarm\bin ==
 rem == As above, this path does not support long directory names or spaces ==
 rem == e.g. ..\..\..\..\..\PROGRA~2\Steam\steamapps\common\ALIENS~1\bin ==
-set SDKBINDIR=..\..\..\..\STEAME~1\steamapps\common\ALIENS~1\bin
+set SDKBINDIR=C:\PROGRA~2\Steam\steamapps\common\ALIENS~1\bin
 
 rem ==  Set the Path to your mods root source code ==
 rem this should already be correct, accepts relative paths only!
