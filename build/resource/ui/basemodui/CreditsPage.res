@@ -36,7 +36,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"SDK_UI_Game_Title"
-		"xpos"					"50"
+		"xpos"					"75"
 		"ypos"					"115" 
 		"wide"					"200"
 		"tall"					"20"
@@ -53,7 +53,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Kosire"
-		"xpos"					"50"
+		"xpos"					"75"
 		"ypos"					"140" 
 		"wide"					"100"
 		"tall"					"10"
@@ -70,7 +70,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Tony Sergi"
-		"xpos"					"50"
+		"xpos"					"75"
 		"ypos"					"155" 
 		"wide"					"100"
 		"tall"					"10"
@@ -88,7 +88,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"DaFox"
-		"xpos"					"50"
+		"xpos"					"75"
 		"ypos"					"170" 
 		"wide"					"100"
 		"tall"					"10"
@@ -105,7 +105,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"c_b_fofep"
-		"xpos"					"50"
+		"xpos"					"75"
 		"ypos"					"185" 
 		"wide"					"100"
 		"tall"					"10"
@@ -122,7 +122,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Doplhur"
-		"xpos"					"50"
+		"xpos"					"75"
 		"ypos"					"200" 
 		"wide"					"100"
 		"tall"					"10"
@@ -139,7 +139,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Valve"
-		"xpos"					"50"
+		"xpos"					"75"
 		"ypos"					"215" 
 		"wide"					"100"
 		"tall"					"10"
