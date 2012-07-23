@@ -4,10 +4,10 @@
 	{
 		"ControlName"		"Frame"
 		"fieldName"			"CreditsPage"
-		"xpos"			"0"
-		"ypos"			"0"
-		"wide"			"f0"
-		"tall"			"f0"
+		"xpos"				"0"
+		"ypos"				"0"
+		"wide"				"f0"
+		"tall"				"f0"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -19,11 +19,11 @@
 	{
 		"ControlName"			"L4DMenuBackground"
 		"fieldName"				"ImgBackground"
-		"xpos"				"0"
-		"ypos"				"99"
-		"zpos"				"-1"
-		"wide"				"f0"
-		"tall"				"300"
+		"xpos"					"0"
+		"ypos"					"99"
+		"zpos"					"-1"
+		"wide"					"f0"
+		"tall"					"300"
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"1"
@@ -36,46 +36,44 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"SDK_UI_Game_Title"
-		"xpos"				"c200"
-		"ypos"				"115" 
-		"wide"				"200"
-		"tall"				"20"
+		"xpos"					"50"
+		"ypos"					"115" 
+		"wide"					"200"
+		"tall"					"20"
 		"autoResize"			"1"
 		"pinCorner"				"0"
-		"visible"				"1"		[!$X360 || !$DEMO]
-		"visible"				"1"		[$X360 && $DEMO]		
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"#SDK_UI_Game_Title"
-		"font"				"DefaultLarge"
+		"font"					"DefaultLarge"
 	}
 	
 	"Kosire"
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Kosire"
-		"xpos"				"c200"
-		"ypos"				"140" 
-		"wide"				"100"
-		"tall"				"10"
+		"xpos"					"50"
+		"ypos"					"140" 
+		"wide"					"100"
+		"tall"					"10"
 		"autoResize"			"1"
 		"pinCorner"				"0"
-		"visible"				"1"		[!$X360 || !$DEMO]
-		"visible"				"1"		[$X360 && $DEMO]		
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"Kosire"
-		"font"				"DefaultMedium"
+		"font"					"DefaultMedium"
 	}
 	
 	"Tony Sergi"
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Tony Sergi"
-		"xpos"				"c200"
-		"ypos"				"155" 
-		"wide"				"100"
-		"tall"				"10"
+		"xpos"					"50"
+		"ypos"					"155" 
+		"wide"					"100"
+		"tall"					"10"
 		"autoResize"			"1"
 		"pinCorner"				"0"
 		"visible"				"1"		[!$X360 || !$DEMO]
@@ -83,61 +81,76 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"Tony Sergi"
-		"font"				"DefaultMedium"
+		"font"					"DefaultMedium"
+	}
+
+	"DaFox"
+	{
+		"ControlName"			"Label"
+		"fieldName"				"DaFox"
+		"xpos"					"50"
+		"ypos"					"170" 
+		"wide"					"100"
+		"tall"					"10"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"DaFox"
+		"font"					"DefaultMedium"
 	}
 	
 	"c_b_fofep"
 	{
 		"ControlName"			"Label"
 		"fieldName"				"c_b_fofep"
-		"xpos"				"c200"
-		"ypos"				"170" 
-		"wide"				"100"
-		"tall"				"10"
+		"xpos"					"50"
+		"ypos"					"185" 
+		"wide"					"100"
+		"tall"					"10"
 		"autoResize"			"1"
 		"pinCorner"				"0"
-		"visible"				"1"		[!$X360 || !$DEMO]
-		"visible"				"1"		[$X360 && $DEMO]		
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"c_b_fofep"
-		"font"				"DefaultMedium"
+		"font"					"DefaultMedium"
 	}
 	
 	"Doplhur"
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Doplhur"
-		"xpos"				"c200"
-		"ypos"				"185" 
-		"wide"				"100"
-		"tall"				"10"
+		"xpos"					"50"
+		"ypos"					"200" 
+		"wide"					"100"
+		"tall"					"10"
 		"autoResize"			"1"
 		"pinCorner"				"0"
-		"visible"				"1"		[!$X360 || !$DEMO]
-		"visible"				"1"		[$X360 && $DEMO]		
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"Doplhur"
-		"font"				"DefaultMedium"
+		"font"					"DefaultMedium"
 	}
 	
 	"Valve"
 	{
 		"ControlName"			"Label"
 		"fieldName"				"Valve"
-		"xpos"				"c200"
-		"ypos"				"200" 
-		"wide"				"100"
-		"tall"				"10"
+		"xpos"					"50"
+		"ypos"					"215" 
+		"wide"					"100"
+		"tall"					"10"
 		"autoResize"			"1"
 		"pinCorner"				"0"
-		"visible"				"1"		[!$X360 || !$DEMO]
-		"visible"				"1"		[$X360 && $DEMO]		
+		"visible"				"1"
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"Valve"
-		"font"				"DefaultMedium"
+		"font"					"DefaultMedium"
 	}
 
 	"IconBackArrow" [$WIN32]
