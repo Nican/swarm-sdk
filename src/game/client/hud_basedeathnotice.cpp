@@ -282,8 +282,28 @@ void CHudBaseDeathNotice::FireGameEvent( IGameEvent *event )
 
 	if ( bPlayerDeath || bObjectDeath )
 	{
-		int victim = engine->GetPlayerForUserID( event->GetInt( "userid" ) );
-		int killer = engine->GetPlayerForUserID( event->GetInt( "attacker" ) );
+		int t_userID = event->GetInt( "userid" );
+		int t_Attacker = event->GetInt( "attacker" );
+		int victim = 0;//engine->GetPlayerForUserID( t_userID );
+		int killer = 0;//engine->GetPlayerForUserID( t_Attacker );
+
+		for (int i = 1; i<=gpGlobals->maxClients; i++ )
+		{
+			C_BasePlayer *pPlayer = UTIL_PlayerByIndex( i );
+
+			if ( !pPlayer )
+				continue;
+
+			if ( pPlayer->GetUserID() == t_userID )
+			{
+				victim = i;
+			}
+			if ( pPlayer->GetUserID() == t_Attacker )
+			{
+				killer = i;
+			}
+		}
+
 		const char *killedwith = event->GetString( "weapon" );
 		const char *killedwithweaponlog = event->GetString( "weapon_logclassname" );
 
@@ -370,6 +390,9 @@ void CHudBaseDeathNotice::FireGameEvent( IGameEvent *event )
 		Msg( "%s\n", sDeathMsg );
 
 	} 
+//DaFox; SDK Fix
+//Tony; this is tf2 specific, it should be moved to hud_tfdeathnotice!!
+#if defined ( TF_DLL )
 	else if ( FStrEq( "teamplay_point_captured", pszEventName ) )
 	{
 		GetLocalizedControlPointName( event, m_DeathNotices[iMsg].Victim.szName, ARRAYSIZE( m_DeathNotices[iMsg].Victim.szName ) );
@@ -426,9 +449,9 @@ void CHudBaseDeathNotice::FireGameEvent( IGameEvent *event )
 		// print a log message
 		Msg( "%s defended %s for team #%d\n", m_DeathNotices[iMsg].Killer.szName, m_DeathNotices[iMsg].Victim.szName, m_DeathNotices[iMsg].Killer.iTeam );
 	}
-		else if ( FStrEq( "teamplay_flag_event", pszEventName ) )
+	else if ( FStrEq( "teamplay_flag_event", pszEventName ) )
 	{
-		/*const char *pszMsgKey = NULL;
+		const char *pszMsgKey = NULL;
 		int iEventType = event->GetInt( "eventtype" );
 		switch ( iEventType )
 		{
@@ -440,37 +463,38 @@ void CHudBaseDeathNotice::FireGameEvent( IGameEvent *event )
 			break;
 		case TF_FLAGEVENT_DEFEND: 
 			pszMsgKey = "#Msg_DefendedFlag"; 
-			break;*/
+			break;
 
 		// Add this when we can get localization for it
 		//case TF_FLAGEVENT_DROPPED: 
 		//	pszMsgKey = "#Msg_DroppedFlag"; 
 		//	break;
 
-		//default:
-		//	// unsupported, don't put anything up			
-		//	m_DeathNotices.Remove( iMsg );
-		//	return;
-		//}
+		default:
+			// unsupported, don't put anything up			
+			m_DeathNotices.Remove( iMsg );
+			return;
+		}
 
-		//wchar_t *pwzEventText = g_pVGuiLocalize->Find( pszMsgKey );
-		//Assert( pwzEventText );
-		//if ( pwzEventText )
-		//{
-		//	V_wcsncpy( m_DeathNotices[iMsg].wzInfoText, pwzEventText, sizeof( m_DeathNotices[iMsg].wzInfoText ) );
-		//}
-		//else
-		//{
-		//	V_memset( m_DeathNotices[iMsg].wzInfoText, 0, sizeof( m_DeathNotices[iMsg].wzInfoText ) );
-		//}
+		wchar_t *pwzEventText = g_pVGuiLocalize->Find( pszMsgKey );
+		Assert( pwzEventText );
+		if ( pwzEventText )
+		{
+			V_wcsncpy( m_DeathNotices[iMsg].wzInfoText, pwzEventText, sizeof( m_DeathNotices[iMsg].wzInfoText ) );
+		}
+		else
+		{
+			V_memset( m_DeathNotices[iMsg].wzInfoText, 0, sizeof( m_DeathNotices[iMsg].wzInfoText ) );
+		}
 
-		//int iPlayerIndex = event->GetInt( "player" );
-		//const char *szPlayerName = g_PR->GetPlayerName( iPlayerIndex );
-		//Q_strncpy( m_DeathNotices[iMsg].Killer.szName, szPlayerName, ARRAYSIZE( m_DeathNotices[iMsg].Killer.szName ) );
-		//m_DeathNotices[iMsg].Killer.iTeam = g_PR->GetTeam( iPlayerIndex );
-		//if ( iLocalPlayerIndex == iPlayerIndex )
-		//	m_DeathNotices[iMsg].bLocalPlayerInvolved = true;
+		int iPlayerIndex = event->GetInt( "player" );
+		const char *szPlayerName = g_PR->GetPlayerName( iPlayerIndex );
+		Q_strncpy( m_DeathNotices[iMsg].Killer.szName, szPlayerName, ARRAYSIZE( m_DeathNotices[iMsg].Killer.szName ) );
+		m_DeathNotices[iMsg].Killer.iTeam = g_PR->GetTeam( iPlayerIndex );
+		if ( iLocalPlayerIndex == iPlayerIndex )
+			m_DeathNotices[iMsg].bLocalPlayerInvolved = true;
 	}
+#endif
 
 	OnGameEvent( event, m_DeathNotices[iMsg] );
 
@@ -487,7 +511,12 @@ void CHudBaseDeathNotice::FireGameEvent( IGameEvent *event )
 		if ( !m_DeathNotices[iMsg].iconDeath )
 		{
 			// Can't find it, so use the default skull & crossbones icon
+			//DaFox; SDK Fix
+#if defined ( TF_DLL )
 			m_DeathNotices[iMsg].iconDeath = GetIcon( "d_skull_tf", m_DeathNotices[iMsg].bLocalPlayerInvolved );
+#else
+			m_DeathNotices[iMsg].iconDeath = GetIcon( "d_skull", m_DeathNotices[iMsg].bLocalPlayerInvolved );
+#endif
 		}
 	}
 }

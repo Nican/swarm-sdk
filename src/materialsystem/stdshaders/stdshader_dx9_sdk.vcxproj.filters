@@ -67,9 +67,6 @@
     <ClCompile Include="aftershock_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BaseVSShader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Bloom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -104,9 +101,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="debugmrttexture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DebugTextureView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DecalModulate_dx9.cpp">
@@ -211,12 +205,6 @@
     <ClCompile Include="..\..\public\tier0\memoverride.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="modulate_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MonitorScreen_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="morphaccumulate_dx9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -235,9 +223,6 @@
     <ClCompile Include="object_motion_blur_dx9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="occlusion_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="parallaxtest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -248,9 +233,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="particlesphere_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="phong_dx9_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="projected.cpp">
@@ -283,79 +265,19 @@
     <ClCompile Include="shadow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shadowbuild_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="shadowmodel_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="shatteredglass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="showz.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sky_hdr_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="splinerope.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sprite_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="spritecard.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="teeth.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TreeLeaf.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="unlitgeneric_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unlittwotexture_dx9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="vertexlitgeneric_dx9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vertexlitgeneric_dx9_helper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="volume_clouds.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="volume_clouds_helper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="vortwarp_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="water.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="windowimposter_dx90.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="wireframe_dx9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="worldtwotextureblend.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="worldvertextransition.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="worldvertextransition_dx8_helper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="writestencil_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="writez_dx9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

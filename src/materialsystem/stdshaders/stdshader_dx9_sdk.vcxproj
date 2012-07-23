@@ -107,7 +107,8 @@
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
       <SubSystem>Windows</SubSystem>
-      <BaseAddress> </BaseAddress>
+      <BaseAddress>
+      </BaseAddress>
       <TargetMachine>MachineX86</TargetMachine>
       <LinkErrorReporting>PromptImmediately</LinkErrorReporting>
     </Link>
@@ -187,7 +188,8 @@
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <BaseAddress> </BaseAddress>
+      <BaseAddress>
+      </BaseAddress>
       <TargetMachine>MachineX86</TargetMachine>
       <LinkErrorReporting>PromptImmediately</LinkErrorReporting>
     </Link>
@@ -1326,7 +1328,6 @@
   <ItemGroup>
     <ClCompile Include="aftershock.cpp" />
     <ClCompile Include="aftershock_helper.cpp" />
-    <ClCompile Include="BaseVSShader.cpp" />
     <ClCompile Include="Bloom.cpp" />
     <ClCompile Include="BlurFilterX.cpp" />
     <ClCompile Include="BlurFilterY.cpp" />
@@ -1344,7 +1345,6 @@
     </ClCompile>
     <ClCompile Include="debugmorphaccumulator_dx9.cpp" />
     <ClCompile Include="debugmrttexture.cpp" />
-    <ClCompile Include="DebugTextureView.cpp" />
     <ClCompile Include="DecalModulate_dx9.cpp" />
     <ClCompile Include="DepthOfField_dx9.cpp" />
     <ClCompile Include="depthwrite.cpp" />
@@ -1384,20 +1384,16 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="modulate_dx9.cpp" />
-    <ClCompile Include="MonitorScreen_dx9.cpp" />
     <ClCompile Include="morphaccumulate_dx9.cpp" />
     <ClCompile Include="morphweight_dx9.cpp" />
     <ClCompile Include="motion_blur_dx9.cpp" />
     <ClCompile Include="multiblend.cpp" />
     <ClCompile Include="multiblend_dx9_helper.cpp" />
     <ClCompile Include="object_motion_blur_dx9.cpp" />
-    <ClCompile Include="occlusion_dx9.cpp" />
     <ClCompile Include="parallaxtest.cpp" />
     <ClCompile Include="particlelitgeneric_dx9.cpp" />
     <ClCompile Include="particlelitgeneric_dx9_helper.cpp" />
     <ClCompile Include="particlesphere_dx9.cpp" />
-    <ClCompile Include="phong_dx9_helper.cpp" />
     <ClCompile Include="projected.cpp" />
     <ClCompile Include="projected_dx9_helper.cpp" />
     <ClCompile Include="prototype.cpp" />
@@ -1408,31 +1404,11 @@
     <ClCompile Include="sample4x4_blend.cpp" />
     <ClCompile Include="screenspace_general.cpp" />
     <ClCompile Include="shadow.cpp" />
-    <ClCompile Include="shadowbuild_dx9.cpp" />
-    <ClCompile Include="shadowmodel_dx9.cpp" />
-    <ClCompile Include="shatteredglass.cpp" />
-    <ClCompile Include="showz.cpp" />
-    <ClCompile Include="sky_hdr_dx9.cpp" />
-    <ClCompile Include="splinerope.cpp" />
-    <ClCompile Include="sprite_dx9.cpp" />
-    <ClCompile Include="spritecard.cpp" />
-    <ClCompile Include="teeth.cpp" />
-    <ClCompile Include="TreeLeaf.cpp" />
     <ClCompile Include="unlitgeneric_dx9.cpp" />
-    <ClCompile Include="unlittwotexture_dx9.cpp" />
     <ClCompile Include="vertexlitgeneric_dx9.cpp" />
-    <ClCompile Include="vertexlitgeneric_dx9_helper.cpp" />
     <ClCompile Include="volume_clouds.cpp" />
-    <ClCompile Include="volume_clouds_helper.cpp" />
-    <ClCompile Include="vortwarp_dx9.cpp" />
-    <ClCompile Include="water.cpp" />
-    <ClCompile Include="windowimposter_dx90.cpp" />
     <ClCompile Include="wireframe_dx9.cpp" />
-    <ClCompile Include="worldtwotextureblend.cpp" />
     <ClCompile Include="worldvertextransition.cpp" />
-    <ClCompile Include="worldvertextransition_dx8_helper.cpp" />
-    <ClCompile Include="writestencil_dx9.cpp" />
-    <ClCompile Include="writez_dx9.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\dx9sdk\lib\d3dx9.lib" />
