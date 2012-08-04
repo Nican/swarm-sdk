@@ -856,7 +856,8 @@ CHudCloseCaption::CHudCloseCaption( const char *pElementName )
 	}
 
 	HOOK_HUD_MESSAGE( CHudCloseCaption, CloseCaption );
-	HOOK_HUD_MESSAGE( CHudCloseCaption, CloseCaptionDirect );
+	//TODO (Nican): Fix me! Need to registered first, somewhere. 
+	//HOOK_HUD_MESSAGE( CHudCloseCaption, CloseCaptionDirect );
 
 	char uilanguage[ 64 ];
 	engine->GetUILanguage( uilanguage, sizeof( uilanguage ) );
