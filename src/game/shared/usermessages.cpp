@@ -126,8 +126,7 @@ void CUserMessages::HookMessage( const char *name, pfnUserMsgHook hook )
 	if ( idx == m_UserMessages.InvalidIndex() )
 	{
 		DevMsg( "CUserMessages::HookMessage:  no such message %s\n", name );
-		//TODO (Nican): Find missing "DesiredTimescale" 
-		//Assert( 0 );
+		Assert( 0 );
 		return;
 	}
 

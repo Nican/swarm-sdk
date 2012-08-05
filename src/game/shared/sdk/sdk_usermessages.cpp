@@ -49,5 +49,10 @@ void RegisterUserMessages()
 
 	// Used to send a sample HUD message
 	usermessages->Register( "GameMessage", -1 );
+
+	//Swarm SDK spececific
+	usermessages->Register( "CurrentTimescale", -1 );
+	usermessages->Register( "DesiredTimescale", -1 );
+		
 }
 
