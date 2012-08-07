@@ -25,7 +25,7 @@ Launch the mod with -override_vpk until I release it with vpk's.
 * No longer needs swarmframescheme.res, swarmscheme.res or swarmserverbrowserscheme.res.
 * Added a credits page vgui panel.
 
-Fixes
+### Fixes
 * Fixed the color scheme for the dedicated server browser.
 * Fixed voice communication (now it works!).
 * Fixed close to all errors in the console.
@@ -38,7 +38,7 @@ Fixes
 * emoved leftovers in the code from the mod 'Somme'.
 * Fixed ERRORNAME in death notices. (Thanks to DaFox)
 
-Improvements
+### Improvements
 * New main menu.
 * New scoreboard.
 * New keyboard layout.
@@ -50,11 +50,11 @@ Improvements
 * Added swarmsdktemplate.fgd.
 * Added Steam and application icon.
 
-Remaining Bugs
+### Remaining Bugs
 * No crosshair.
 * No html motd.
 * Mouse pointer is hidden when not inside any vgui panel.
 * No voice icon when talking (but it works, check with voice_loopback 1)
 * Improved version of http://www.moddb.com/mods/alien-swarm-sdk-template-conversion
 
-Thanks to, Tony Sergi, DaFox, c_b_fofep, Doplhur and Valve.
+Thanks to Rasmus Geil, Tony Sergi, DaFox, c_b_fofep, Doplhur and Valve.
